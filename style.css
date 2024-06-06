@@ -13,21 +13,25 @@ body {
 #main{
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
     /* background-color: grey; */
 }
 #navbar{
     height: 8vh;
     width: 100vw;
     background-color: black;
+    top: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .nav-left{
     display: flex;
     height:100%;
-    width:45vw ;
-    background-color: aquamarine;
-    padding: 2vh;
+    width:40vw ;
+   
+   padding-left: 1vw;
+   padding-right: 1vw;
     align-items: center;
     justify-content: space-between;
     }
@@ -41,7 +45,69 @@ body {
     }
     .nav-middle{
         display: flex;
+        align-items: center;
+        justify-content: center;
         height: 100%;
         width: 30vw;
-        background-color: blue;
+        
+    }
+
+    .nav-search{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: pink;
+        width: 27vw;
+        height: 60%;
+        border-radius: 5px;
+        border: none;
+    
+    }
+    .search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    
+    
+    }
+    
+    .search-input{
+        
+        width: 620px;
+        font-size: 1rem;
+        border: none;
+        
+    }
+    .search-icon{
+        width: 45px;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+         font-size: 1.2rem;
+         background-color: rgb(233, 142, 13);
+         border-top-right-radius: 5px;
+         border-bottom-right-radius: 5px;
+         color: #0f1111;
+    }
+    /** box 4 **/
+    span{
+        font-size: 0.8rem;
+    
+    }
+    .nav-second{
+    font: size 0.85rem; ;
+    font-weight: 700;
+    
+    }
+    .nav-search:hover{
+        border: 2px solid orangered;
+    
+    }
+
+    .nav-right{
+        height: 100%;
+        width: 25vw;
+        
     }
