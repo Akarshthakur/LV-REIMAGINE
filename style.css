@@ -9,7 +9,39 @@ html,
 body {
     height: 100%;
     width: 100%;
-    text-align: center;
-    background-color: rgb(245, 245, 235);
-
 }
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: grey; */
+}
+#navbar{
+    height: 8vh;
+    width: 100vw;
+    background-color: black;
+}
+.nav-left{
+    display: flex;
+    height:100%;
+    width:45vw ;
+    background-color: aquamarine;
+    padding: 2vh;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .brand{
+        height:80%;
+        width: 8vw;
+    }
+    h1{
+        color:whitesmoke;
+        font-size: 20px;
+    }
+    .nav-middle{
+        display: flex;
+        height: 100%;
+        width: 30vw;
+        background-color: blue;
+    }
