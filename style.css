@@ -586,9 +586,9 @@ body {
       margin-bottom: 20px;
    }
    .prefooter-colm:hover{
-    border:3px solid #ab2323;
+    border:1.5px solid #302020;
     border-radius: 15px;
-    transition: 2s;
+    transition: 1s;
  }
    .prefooter-colm h4{
        font-size: 18px;
@@ -678,3 +678,61 @@ body {
         width:100%;
       }
     }
+
+    
+.back-to-top-footer{
+    height: auto;
+    min-height: 100px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    
+}
+.footer-col-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px ;
+    padding-right: 1000px;
+}
+
+h4{
+    font-family: Arial sans-serif;
+    color: #ffffff;
+}
+.footer-col-back .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+    
+}
+.footer-col-back .social-links a:hover{
+	color: #24262b;
+	background-color: #ff0404;
+}
+
+.footer-col-back h4:hover{
+	
+	color: #ff0404;
+}
+
+.social-links{
+    padding-left: 20px;
+}
+
+.button{
+    font-size: 40px;
+   border-radius: 50%;
+   border: solid 2px black;
+
+}
