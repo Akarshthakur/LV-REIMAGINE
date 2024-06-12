@@ -5,9 +5,7 @@ body{
 }
 
 
-
-
-* {
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -386,7 +384,7 @@ body {
 
 
 /* footer*/
-#logoimg{
+/* #logoimg{
     width:100px;
     margin-bottom: 25px;
   
@@ -491,7 +489,7 @@ body {
     opacity: 1;
   }
   
-  .col .links  a ::hover{
+  .col .links  a:hover{
     transform: translateX(-8px);
     color: #E42217;
   
@@ -561,4 +559,122 @@ body {
       margin-bottom: 20px;
       
     }
+  } */
+
+ 
+  .container-prefooter{
+      max-width: 1500px;
+      margin:auto;
   }
+
+  .row-prefooter{
+      display: flex;
+      flex-wrap: wrap;
+      
+  }
+  
+  .pre-footer{
+      background-color:#1d1c1c;
+      padding: 70px 0 0 10px;
+  }
+  .pre-footer:hover{
+    border:3.5px solid #fff;
+ }
+  .prefooter-colm{
+      width: 20%;
+      padding: 0 15px;
+      margin-bottom: 20px;
+   }
+   .prefooter-colm:hover{
+    border:3px solid #ab2323;
+    border-radius: 15px;
+    transition: 2s;
+ }
+   .prefooter-colm h4{
+       font-size: 18px;
+       color: #ffffff;
+       text-transform: capitalize;
+       margin-bottom: 35px;
+       font-weight: 5500;
+       font-family: Arial sans-serif;
+       position: relative;
+       text-align: center;
+   }
+  
+   .prefooter-colm h4::before{
+      content: '';
+      position: absolute;
+      left:0;
+      bottom: -10px;
+      /* /background-color: #6b7c82;/ */
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px;
+  }
+  
+  .prefooter-colm i{ 
+      padding: 0px 0px 20px 110px;
+      color: #a79e9e;
+      font-weight: 1600;
+      font-size: xx-large;
+  } 
+  
+  .prefooter-colm i:hover{
+      font-weight: 1700;
+      font-size: 35px;
+      color: #ff0c0c;
+      
+  }
+  
+  
+  p{
+      padding-bottom: 60px;
+      color: #ffffff;
+      text-align: center;
+      font-family: Arial, sans-serif;
+  }
+  
+  .prefooter-colm a{
+      padding: 0px 0px 20px 100px;
+      color: #c1baba;
+      font-weight: bold;
+      /* color: #ff0c0c; */
+      color: #fff;
+  }
+  
+  .prefooter-colm a:hover{
+      font-size: 17px;
+      
+  }
+  
+  .prefooter-colm h4:hover{
+      font-size: 17px;
+      text-decoration: underline;
+      
+  
+  }
+  .prefooter-colm p:hover{
+      font-size: 17px;
+      
+  }
+  
+  .img{
+      padding: 0px 0px 20px 100px;
+  }
+  
+  
+  .img1{
+      padding: 0px 0px 20px 50px;
+  }
+  /* /responsive/ */
+  @media(max-width: 767px){
+      .prefooter-colm{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    }
+    @media(max-width: 574px){
+      .prefooter-colm{
+        width:100%;
+      }
+    }
