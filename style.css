@@ -478,3 +478,85 @@ h4{
 .social-links{
     padding-left: 20px;
 }
+
+
+/*page 3*/
+
+#page3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.secpg3{
+    padding: 10px 5%;
+}
+
+.productspg3{
+    /*display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px));*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+
+.productspg3 .cardpg3{
+    width:300px;
+    background-color: #f4f4f4;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    
+}
+.productspg3 .cardpg3 img{
+    height:280px;
+    width:90%
+}
+
+.productspg3 .cardpg3 .descpg3{
+    padding: 5px 20px;
+    opacity: 0.8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.productspg3 .cardpg3 .titlepg3{
+    font-weight: 900;
+    font-size: 20px;
+    color:#424144;
+    padding:0 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.productspg3 .cardpg3 .boxpg3{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.productspg3 .cardpg3 .boxpg3 .pricepg3{
+    color:crimson;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.productspg3 .cardpg3 .boxpg3 .btnpg3{ 
+    font-size: 13px;
+    color: #f63e4e;
+    padding: 10px 18px;
+     font-weight: 900; 
+     border: 1px solid  #f63e4e;
+      border-radius: 20px;
+      background-color: #f4f4f4;
+      
+}
+
+.productspg3 .cardpg3 .boxpg3 .btnpg3:hover{ 
+    cursor: pointer; 
+    background-color:#f63e4e;
+    color: white;
+    font-size: 15px;
+    
+}
+
+/*page 3 end*/
