@@ -1,28 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body{
-    line-height: 1.5;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+   
+    overflow-x: hidden;
 }
 
-
- *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
 
-html,
-body {
-    height: 100%;
+
+
+#baa video {
+    height: 100vh;
     width: 100%;
-    background-color: black;
-    overflow-x: hidden;
-}
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+} 
+
 #main{
-    height: 92vh;
+    height:auto;
     width: 100%;
-    display:block;
+ 
     overflow-x: hidden;
     align-items: center;
     justify-content: center;
@@ -151,9 +158,201 @@ body {
     }
 
 #page1{
-    height:92vh;
+    height:100vh;
     width: 100vw;
+    background-color: rgba(0, 0, 0, 0);
 }
+
+#page2{
+    width: 100vw;
+height: 100vh;
+
+background-color: black;
+
+
+}
+
+
+#container-page2{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+#left-page2{
+height:100vh;
+width: 40vw;
+
+left: 0  !important;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+
+
+}
+
+.image-container {
+    width: fit-content;
+    max-width: 500px;
+    max-height: 90vh;
+    height: fit-content;
+    border-radius: 8px;
+    overflow: hidden;
+   
+    transition: box-shadow 300ms ease-in-out;
+}
+
+.image-container img {
+    width: 90%;
+    top: 6vh !important;
+    height: 89vh;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 300ms ease-in-out, filter 300ms ease-in-out;
+}
+
+.image-container:hover {
+    box-shadow: 0 }
+
+#right-page2{
+height: 100vh;
+width: 60vw;
+
+display: flex;
+align-items: center;
+
+flex-direction: column;
+
+
+}
+
+#details-page2{
+height:fit-content;
+width: 40vw;
+margin-top: 20vh;
+padding-left: 2vw;
+padding-right: 3vw;
+padding-bottom: 2vw;
+border-bottom: 1.4px solid beige;
+
+}
+
+#details-page2 h1 {
+    font-size: 2vw;
+    line-height: 5vh;
+}
+
+#price-section{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+flex-direction: column;
+
+
+
+}
+
+#price-section h1{
+
+    text-align: end;
+    text-transform: capitalize;
+}
+
+
+#one{
+    font-size: 3vw;
+    margin-bottom: 1vh;
+    margin-top: 2vh;
+    text-align: end;
+}
+
+#two {
+ font-size: 1.5vw;
+ margin-bottom: 1.4vh;
+ margin-top: 1vh;
+}
+
+#three{
+    font-size: 1.2vw;
+}
+#about-page2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:5vh;
+}
+
+#btn-ripple {
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    width: 250px;
+    margin-left: 2vw;
+    background-color: #ED1556;
+    color: white;
+    font-size: 1.3vw;
+}
+
+.ripples {
+    background-color: bisque;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+
+
+#btn-ripplea {
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    width: 250px;
+    margin-left: 2vw;
+    background-color: #ED1556;
+    color: white;
+    font-size: 1.3vw;
+}
+
+.ripplesa {
+    background-color: bisque;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.zoom-container {
+    position: relative;
+    width:30vw;
+    height: 80vh;
+    overflow: hidden;
+
+
+}
+
+#main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#zoomed-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: url('/images/blaze-curve-list-img.png') no-repeat;
+    background-size: 160%;
+    pointer-events: none;
+    display: none;
+}
+
 
 .container{
    margin-top:45px;
@@ -301,20 +500,7 @@ body {
     color: #f60808;
     
 }
-#page2{
-    display: grid;
-    padding-top: 20px;
-    grid-template-rows: 5vh 45vh;
-    height: 55vh;
-    width: 100vw;
-    background-color: black;
-}
 
-#bottom{
-    display: grid;
-    grid-template-columns: 24vw 24vw 24vw 24vw ;
-    background-color: black;
-}
  
 .container-prefooter{
       max-width: 1500px;
@@ -490,6 +676,7 @@ h4{
 
 #page3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
 }
 .secpg3{
     padding: 10px 5%;
@@ -574,15 +761,17 @@ h4{
     overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
+    background-color: black;
 }
 #container{
     height: 100%;
     width: 100%;
     display: inline-block;
+    margin-left: 1vw;
     padding: 2.5vw;
     padding-left: 1vw;
     animation-name: anime;
-    animation-duration: 7s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -605,7 +794,7 @@ h4{
 #backgroundpage{
     height: 90vh;
     width: 100vw;
-    background-color: red;
+
     margin-bottom: 4vh;
     overflow-x: hidden;
     overflow-y: hidden;

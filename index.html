@@ -20,13 +20,36 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 />
 
 
+<!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<!-- ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+
+
 </head>
 <body>
-  
+
+   
+        <div id="baa">
+            <video
+            autoplay
+            loop
+            muted
+            src="/images/Behold the Glory of Storm _ Launching on 21.12.23 (360p).mp4">
+        
+        </video>    
+      
+        
+    
+    </div>
+     
  <div id="main">
+
+ 
         <div id="navbar">
             <div class="nav-left">
-                <img class="brand" src="./lava-mobiles-logo.png" alt="">
+                <img class="brand" src="/images/lava-mobiles-logo.png" alt="">
                 <h1>Product</h1>
                 <h1>LavaCare</h1>
                 <h1>Store</h1>
@@ -56,74 +79,160 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
             </div>
         </div>
 
-    <div class="container">
-
-        <div class="slide">
-
-            
-            <div class="item" style="background-image: url(lava\ page\ 1\ img.jpg);">
-                <div class="content">
-                    <div class="name">LAVA MOBILE</div>
-                    <div class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, sint!</div>
-                   <button>See More</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(lava\ page\ 2\ img.jpg); object-fit: cover;">
-                <div class="content">
-                    <div class="name">LAVA EARBUDS</div>
-                        <div class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, sint!</div>
-                       <button>See More</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(lava\ page\ 3\ img.jpg);">
-                <div class="content">
-                    <div class="name">LAVA SMARTWATCH</div>
-                    <div class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, sint!</div>
-                   <button>See More</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(lava\ page\ 4\ img.jpg);">
-                <div class="content">
-                    <div class="name">LAVA ACCESORIES</div>
-                    <div class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, sint!</div>
-                   <button>See More</button>
-                </div>
-            </div>
-     
+        <div id="page1">
+    
 
         </div>
 
-        <div class="button">
-           <button class="prev"><i class="ri-arrow-left-s-line"></i></button>
-           <button class="next"><i class="ri-arrow-right-s-line"></i></button>
-        </div>
 
+        <div id="page2">
+ <div id="container-page2">
+<div id="left-page2">
+
+   
+
+    <div class="left-page3">
+      
+        <div class="image-container">           
+            <img src="/images/blaze-curve-list-img.png" alt="" class="img" />
+        </div>
     </div>
+    <script>
+        const imageContainer = document.querySelector(".image-container");
+        const img = imageContainer.querySelector(".img");
+
+        imageContainer.addEventListener("mousemove", (evt) => {
+            let rect = imageContainer.getBoundingClientRect();
+            let x = evt.clientX - rect.left;
+            let y = evt.clientY - rect.top;
+            img.style.transformOrigin = `${x}px ${y}px`;
+            img.style.transform = "scale(2.5)";
+            img.style.filter = "brightness(1.2)";
+            imageContainer.style.cursor = "zoom-in";
+        });
+
+        imageContainer.addEventListener("mouseleave", () => {
+            img.style.transformOrigin = "center center";
+            img.style.transform = "scale(1)";
+            img.style.filter = "brightness(1)";
+            imageContainer.style.cursor = "default";
+        });
+    </script>
+    
+    <script>
+        const mainImage = document.getElementById('main-image');
+        const zoomedImage = document.getElementById('zoomed-image');
+        const zoomContainer = document.querySelector('.zoom-container');
+    
+        zoomContainer.addEventListener('mousemove', (e) => {
+            const { left, top, width, height } = zoomContainer.getBoundingClientRect();
+            const x = e.pageX - left - window.scrollX;
+            const y = e.pageY - top - window.scrollY;
+            const xPercent = (x / width) * 100;
+            const yPercent = (y / height) * 100;
+    
+            zoomedImage.style.display = 'block';
+            zoomedImage.style.backgroundPosition = `${xPercent}% ${yPercent}%`;
+        });
+    
+        zoomContainer.addEventListener('mouseleave', () => {
+            zoomedImage.style.display = 'none';
+        });
+    </script>
+    
+</div>
+
+<div id="right-page2">
+
+    <div id="details-page2">
+    <h1>Lava Blaze Curve 5G (Glass Iron, 8GB LPDDR5 RAM, UFS 3.1 128GB Storage) | 120Hz Curved Amoled Display |2.6GHz Dimensity 7050 6nm Processor | 64 MP Primary Sony Sensor</h1>
     
 
 </div>
 
+<div id="price-section">
+    
+<h1 id="one">
 
- 
+    -14% ₹17,999 
+</h1>
+  
+    <h1 id="two">M.R.P.: ₹20,999.00M.R.P.: ₹20,999 </h1>
+    
+    <h1 id="three">Inclusive of all taxes</h1>
 
-
-<div id="page2">
-    <div id="top"></div>
-    <div id="bottom">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-    </div>
 
 </div>
+
+<div id="about-page2">
+   
+    <button class="btn btn-primary" id="btn-ripple">
+       Buy Now
+        <span class="ripples"></span>
+    </button>
+
+
+    <button class="btn btn-primarya" id="btn-ripplea">
+        Add to Cart
+        <span class="ripplesa" id="ripplea"></span>
+    </button>  
+
+
+      <script>
+        
+document.getElementById('btn-ripple').addEventListener('click', function(e) {
+    gsap.fromTo('.ripples' , {
+      border: '1px solid #fff',
+      left: e.offsetX,
+      top: e.offsetY,
+      height: 0,
+      width: 0,
+      opacity: 1,
+    }, {
+      border: '0px solid #fff',
+      height: 60,
+      width: 60,
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out"
+    })
+  })
+
+
+  document.getElementById('btn-ripplea').addEventListener('click', function(e) {
+    gsap.fromTo('.ripplesa' , {
+      border: '1px solid #fff',
+      left: e.offsetX,
+      top: e.offsetY,
+      height: 0,
+      width: 0,
+      opacity: 1,
+    }, {
+      border: '0px solid #fff',
+      height: 60,
+      width: 60,
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out"
+    })
+  })
+      </script>
+
+
+
+</div>
+
+
+
+ </div>
+        </div>
 
 <div id="page3">
     <section class="secpg3">
         <div class="productspg3" >
             <!--card start-->
             <div class="cardpg3">
-                <div class="imgpg3"><img src="Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                <div class="imgpg3"><img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
                 <div class="descpg3" >smart phone</div>
                 <div class="titlepg3">Blaze L21</div>
                 <div class="boxpg3" >
@@ -134,7 +243,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
             <!--card end-->
               <!--card start-->
               <div class="cardpg3">
-                <div class="imgpg3"><img src="Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                <div class="imgpg3"><img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
                 <div class="descpg3" >smart phone</div>
                 <div class="titlepg3">Blaze L21</div>
                 <div class="boxpg3" >
@@ -145,7 +254,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
             <!--card end-->
               <!--card start-->
               <div class="cardpg3">
-                <div class="imgpg3"><img src="Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                <div class="imgpg3"><img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
                 <div class="descpg3" >smart phone</div>
                 <div class="titlepg3">Blaze L21</div>
                 <div class="boxpg3" >
@@ -156,7 +265,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
             <!--card end-->
               <!--card start-->
               <div class="cardpg3">
-                <div class="imgpg3"><img src="Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                <div class="imgpg3"><img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
                 <div class="descpg3" >smart phone</div>
                 <div class="titlepg3">Blaze L21</div>
                 <div class="boxpg3" >
@@ -167,7 +276,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
             <!--card end-->
               <!--card start-->
               <div class="cardpg3">
-                <div class="imgpg3"><img src="Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                <div class="imgpg3"><img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
                 <div class="descpg3" >smart phone</div>
                 <div class="titlepg3">Blaze L21</div>
                 <div class="boxpg3" >
@@ -178,7 +287,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
             <!--card end-->
               <!--card start-->
               <div class="cardpg3">
-                <div class="imgpg3"><img src="Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                <div class="imgpg3"><img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
                 <div class="descpg3" >smart phone</div>
                 <div class="titlepg3">Blaze L21</div>
                 <div class="boxpg3" >
@@ -189,7 +298,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
             <!--card end-->
               <!--card start-->
               <div class="cardpg3">
-                <div class="imgpg3"><img src="Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                <div class="imgpg3"><img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
                 <div class="descpg3" >smart phone</div>
                 <div class="titlepg3">Blaze L21</div>
                 <div class="boxpg3" >
@@ -200,7 +309,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
             <!--card end-->
               <!--card start-->
               <div class="cardpg3">
-                <div class="imgpg3"><img src="Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                <div class="imgpg3"><img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
                 <div class="descpg3" >smart phone</div>
                 <div class="titlepg3">Blaze L21</div>
                 <div class="boxpg3" >
@@ -216,27 +325,28 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 </div>
 <div id="page4">
     <div id="container">
-        <img src="Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
-        <img src="Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
-        <img src="Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
-        <img src="Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
-        <img src="Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
-        <img src="Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
+        <img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
+        <img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
+        <img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
+        <img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
+        <img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
+        <img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
+
 
     </div>
     <div id="container">
-        <img src="Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
-        <img src="Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
-        <img src="Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
-        <img src="Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
-        <img src="Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
-        <img src="Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
+        <img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
+        <img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
+        <img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
+        <img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
+        <img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
+        <img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png" alt="">
 
     </div>
 </div>
 <div id="page5">
     <div id="backgroundpage">
-       <img src="lava page 5 img.jpg" alt="">
+       <img src="/images/lava page 5 img.jpg" alt="">
        <video src=""></video>
 </div>
 
@@ -258,7 +368,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
                     <h4>Free Shipping</h4>
                     <p>For US Oreders $50+</p>
                     <div class="img">
-                        <img src="pre footer img1.jpg" alt="whatsapp"height="50" width="80">
+                        <img src="/images/pre footer img1.jpg" alt="whatsapp"height="50" width="80">
                     </div>
                     
                 </div>
@@ -267,7 +377,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
                     <h4>safe payment</h4>
                     <p>Safe shopping guranteed</p>
                     <div class="img1">
-                        <img src="pre footer img2.jpg" alt="whatsapp"height="50" width="150">
+                        <img src="/images/pre footer img2.jpg" alt="whatsapp"height="50" width="150">
                     </div>
                 </div>
                 <div class="prefooter-colm ">
@@ -305,6 +415,14 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     </div>
 
     
+</div>
+
+
+    
+<!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<!-- ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 
 
     <script src="script.js"></script>
