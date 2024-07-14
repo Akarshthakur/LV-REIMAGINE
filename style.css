@@ -17,6 +17,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: black;
+    overflow-x: hidden;
 }
 #main{
     height: 92vh;
@@ -25,6 +26,7 @@ body {
     overflow-x: hidden;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 #navbar{
@@ -326,8 +328,13 @@ body {
   }
   
   .pre-footer{
+    height: auto;
+    width: 100%;
+      overflow-x: hidden;
       background-color:#1d1c1c;
-      padding: 70px 0 0 10px;
+      padding: 40px 0 0 1px;
+      
+     
   }
   .pre-footer:hover{
     border:3.5px solid #fff;
@@ -430,8 +437,7 @@ body {
 
     
 .back-to-top-footer{
-    height: auto;
-    min-height: 100px;
+    height: 30vh;
     width: 100%;
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -560,3 +566,51 @@ h4{
 }
 
 /*page 3 end*/
+
+#page4{
+    height: 60vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding: 2.5vw;
+    padding-left: 1vw;
+    animation-name: anime;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#page4 img{
+    height: 100%;
+    width: 15%;
+    margin: 1vw;
+    border-radius: 25px;
+    object-fit: cover;
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#backgroundpage{
+    height: 90vh;
+    width: 100vw;
+    background-color: red;
+    margin-bottom: 4vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+#backgroundpage img{
+    object-fit: cover;
+}
