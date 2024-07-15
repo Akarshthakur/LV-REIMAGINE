@@ -24,6 +24,7 @@ body {
     object-fit: cover;
     z-index: -1;
     position: fixed;
+    overflow-y: hidden;
 } 
 
 #main{
@@ -755,13 +756,13 @@ h4{
 /*page 3 end*/
 
 #page4{
-    height: 60vh;
-    width: 100%;
+    height: 50vh;
+    width: 100vw;
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
-    background-color: black;
+    background-color:black;
 }
 #container{
     height: 100%;
@@ -770,25 +771,29 @@ h4{
     margin-left: 1vw;
     padding: 2.5vw;
     padding-left: 1vw;
+    padding-bottom: 4vh;
     animation-name: anime;
-    animation-duration: 10s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 #page4 img{
     height: 100%;
-    width: 15%;
-    margin: 1vw;
+    width: 15vw;
+    margin: 1vw 2.5vw;
     border-radius: 25px;
     object-fit: cover;
+    object-position: top;
+    padding-bottom: 4vh;
+
 }
 @keyframes anime {
     from{
         transform: translateX(0);
     }
     to{
-        transform: translateX(-100%);
+        transform: translateX(-110%);
     }
 }
 #backgroundpage{
