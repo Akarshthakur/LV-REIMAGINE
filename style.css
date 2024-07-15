@@ -5,7 +5,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-   
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
@@ -24,6 +24,7 @@ body {
     object-fit: cover;
     z-index: -1;
     position: fixed;
+    overflow-y: hidden;
 } 
 
 #main{
@@ -206,8 +207,8 @@ justify-content: center;
 }
 
 .image-container img {
-    width: 90%;
-    top: 6vh !important;
+    width: 95%;
+    top: 5vh !important;
     height: 89vh;
     object-fit: cover;
     object-position: center;
@@ -755,13 +756,13 @@ h4{
 /*page 3 end*/
 
 #page4{
-    height: 60vh;
-    width: 100%;
+    height: 50vh;
+    width: 100vw;
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
-    background-color: black;
+    background-color:black;
 }
 #container{
     height: 100%;
@@ -770,26 +771,51 @@ h4{
     margin-left: 1vw;
     padding: 2.5vw;
     padding-left: 1vw;
+    padding-bottom: 4vh;
     animation-name: anime;
-    animation-duration: 10s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 #page4 img{
     height: 100%;
-    width: 15%;
-    margin: 1vw;
+    width: 15vw;
+    margin: 1vw 2.5vw;
     border-radius: 25px;
     object-fit: cover;
+    object-position: top;
+    padding-bottom: 4vh;
+
 }
+
 @keyframes anime {
     from{
         transform: translateX(0);
     }
     to{
-        transform: translateX(-100%);
+        transform: translateX(-110%);
     }
+}
+#bottom-page4{
+    height: 8vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    unicode-bidi: isolate;
+    justify-content: flex-end;
+    padding-right: 2vw;
+    padding-bottom: 2.1vw;
+
+} 
+#bottom-page4 i{
+    color: white;
+    font-size: 1.7vw;
+    fo
+}
+#container{
+
 }
 #backgroundpage{
     height: 90vh;
