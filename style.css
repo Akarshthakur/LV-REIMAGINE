@@ -1257,7 +1257,7 @@ display: flex;
 
 
 #scrollToTopBtn:hover {
- background-color: #e91e63; 
+ background-color: black; 
 color:rgb(255, 255, 255);
 transition: 0.2s ease;
 
@@ -1268,3 +1268,46 @@ transition: 0.2s ease;
 #scrollToTopBtn .fas {
     font-size: 25px;
 }
+ 
+
+.container6 {
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+
+}
+.c,
+.d {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.d {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.container6 img {
+  height: 90vh;
+
+}
+
+.c img {
+  height: 80vh;
+  width: 28vw;
+}
+
+.d_right {
+  margin-left: -21px;
+}
+
+

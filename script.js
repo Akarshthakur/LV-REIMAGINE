@@ -1,4 +1,13 @@
+
+
+
+
+
+
 let next = document.querySelector('.next')
+
+
+
 let prev = document.querySelector('.prev')
 
 next.addEventListener('click', function(){
@@ -63,4 +72,34 @@ mybutton.addEventListener("click", function() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
 
+
+
+
+let dogR = document.querySelector('.dog_right');
+let dogL = document.querySelector('.dog_left');
+let container = document.querySelector('.container6');
+
+gsap.registerPlugin(ScrollTrigger);
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: container,
+    pin: true,
+    start: "top top",
+    end: "+=500",
+    scrub: 0.2,
+  },
+
+});
+
+tl.to(dogR, {
+  translateX: "60vw",
+  rotation: "45",
+  duration: 1.5,
+})
+tl.to(dogL, {
+  translateX: "-60vw",
+  duration: 1.5,
+  rotation: "-45",
+}, '-=1.5')
 

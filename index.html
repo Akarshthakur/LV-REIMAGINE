@@ -577,11 +577,72 @@ carousel.addEventListener("touchend", dragStop) ;
         <img src="./images/green robot.jpg" alt="">
 
     </div>
-</div>
+
 <div id="bottom-page4">
     <i class="ri-play-circle-fill"></i>
     <i class="ri-pause-circle-fill"></i>
 </div>
+
+</div>
+
+
+
+<div id="page7">
+    <div class="container6">
+      <div class="c">
+        <img src="./images/blaze-curve-list-img.png" alt="cat">
+      </div>
+      <div class="d">
+        <div class="d_left">
+          <img src="./images/image1x1.jpg" alt="dog">
+            
+          </div>
+        <div class="d_right">
+          <img src="./images/image2x1.jpg" alt="dog">
+        </div>
+      </div>
+    </div>
+</div>
+  
+   
+
+    <script>
+
+let dogR = document.querySelector('.d_right');
+let dogL = document.querySelector('.d_left');
+let container = document.querySelector('.container6');
+
+gsap.registerPlugin(ScrollTrigger);
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: container,
+    pin: true,
+    start: "top top",
+    end: "+=500",
+    scrub: 0.2,
+  },
+
+});
+
+tl.to(dogR, {
+  translateX: "60vw",
+  rotation: "45",
+  duration: 1.5,
+})
+tl.to(dogL, {
+  translateX: "-60vw",
+  duration: 1.5,
+  rotation: "-45",
+}, '-=1.5')
+
+    </script>
+
+   
+
+
+
+
 <div id="page5">
     <div id="backgroundpage">
        <img src="./images/lava page 5 img.jpg" alt="">
