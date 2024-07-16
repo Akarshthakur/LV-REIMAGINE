@@ -4,20 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lava reimagine</title>
-    <link rel="stylesheet" href="style.css">
-
+    
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
     rel="stylesheet"
 />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
 
 
 <!-- GSAP Core -->
@@ -26,10 +22,16 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 
 
+<link rel="stylesheet" href="style.css">
+  
+
 
 </head>
 <body>
-
+    <div id="container-cursor">
+        <div class="cursor cursor--large">  </div>
+        <div class="cursor cursor--small">  </div>
+      </div>
    
         <div id="baa">
             <video
@@ -46,44 +48,62 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
      
  <div id="main">
 
- 
-        <div id="navbar">
-            <div class="nav-left">
-                <img class="brand" src="./images/lava-mobiles-logo.png" alt="">
-                <h1>Product</h1>
-                <h1>LavaCare</h1>
-                <h1>Store</h1>
-                <h1>About</h1>
-            </div>
-            <div class="nav-middle">
+    <div class="navbar-container">
+        <header id="navbar" class="navbar">
+            <nav class="nav-content">
+                <div class="nav-left">
+                    <a href="#" class="logo">Logo</a>
+                    <a href="#product" class="nav-link">Product</a>
+                    <a href="#lavacare" class="nav-link">LavaCare</a>
+                    <a href="#store" class="nav-link">Store</a>
+                    <a href="#about" class="nav-link">About</a>
+                </div>
+                <div class="nav-right">
+                    <input type="text" placeholder="Search" class="search-bar">
+                    <a href="#account" class="nav-icon"><i class="fas fa-user"></i></a>
+                    <a href="#cart" class="nav-icon"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </nav>
+        </header>
+    </div>
 
-                <div class="nav-search">
 
-                    <select class="search-select">
-                     <option > ALL </option>
-                    </select>
-                    <input placeholder=" " class="search-input">
-                    <div class="search-icon">
-                        <i class="ri-search-line"></i>
-                    </div>
-
-            </div>
-
-        </div>
-            
-            <div class="nav-right">
-                <i class="ri-user-fill"></i>
-                <i class="ri-shopping-bag-4-line"></i>
-               
-                
-            </div>
+    <div id="page1">
+        <div class="content-container">
+            <h1 class="headline">Welcome to Our Website</h1>
+           
+            <h1 class="subheadline">Explore our amazing products and services</h1>
+            <a href="#product" class="cta-button">Learn More</a>
+       
         </div>
 
-        <div id="page1">
+  <script>
+
     
+gsap.registerPlugin(ScrollTrigger);
 
-        </div>
 
+const shashi = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#page2", 
+        start: "top center", 
+        end: "+=100%",
+        scrub: 1, 
+        pin: true, 
+        anticipatePin: 1, 
+    }
+});
+
+
+shashi.from(".headline", { x: "-100%", opacity: 0 })
+  .from(".subheadline", { x: "100%", opacity: 0 }, "-=0.5"); 
+
+
+
+  </script>
+
+        
+    </div>
 
         <div id="page2">
  <div id="container-page2">
@@ -209,357 +229,203 @@ document.getElementById('btn-ripple').addEventListener('click', function(e) {
         </div>
     </div>
 
-
-<div id="page3">
-    <section class="secpg3">
+    <div id="page8">
 
 
-        <div class="wrapper">
-            <i id="left" class="fa-solid fa-caret-left"></i>
-            <div class="crouselpg2">
-          
-          
-                <div class="cardpg3" id="firstcard">
-                    <div class="imgpg3"><img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png" draggable="false"></div>
-                    <div class="descpg3" >smart phone</div>
-                    <div class="titlepg3">Blaze L21</div>
-                    <div class="boxpg3" >
-                    <div class="pricepg3">50k</div>
-                    <button class="btnpg3">buy now</button>
-                    </div>
-                </div>
-    
-                <div class="cardpg3">
-                    <div class="imgpg3"><img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png" draggable="false"></div>
-                    <div class="descpg3" >smart phone</div>
-                    <div class="titlepg3">Blaze L21</div>
-                    <div class="boxpg3" >
-                    <div class="pricepg3">50k</div>
-                    <button class="btnpg3">buy now</button>
-                    </div>
-                </div>
-               
-    
-                <div class="cardpg3">
-                    <div class="imgpg3"><img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png" draggable="false"></div>
-                    <div class="descpg3" >smart phone</div>
-                    <div class="titlepg3">Blaze L21</div>
-                    <div class="boxpg3" >
-                    <div class="pricepg3">50k</div>
-                    <button class="btnpg3">buy now</button>
-                    </div>
-                </div>
-               
-    
-                <div class="cardpg3">
-                    <div class="imgpg3"><img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png" draggable="false"></div>
-                    <div class="descpg3" >smart phone</div>
-                    <div class="titlepg3">Blaze L21</div>
-                    <div class="boxpg3" >
-                    <div class="pricepg3">50k</div>
-                    <button class="btnpg3">buy now</button>
-                    </div>
-                </div>
-               
-    
-                <div class="cardpg3">
-                    <div class="imgpg3"><img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png" draggable="false"></div>
-                    <div class="descpg3" >smart phone</div>
-                    <div class="titlepg3">Blaze L21</div>
-                    <div class="boxpg3" >
-                    <div class="pricepg3">50k</div>
-                    <button class="btnpg3">buy now</button>
-                    </div>
-                </div>
-               
-    
-                <div class="cardpg3">
-                    <div class="imgpg3"><img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png" draggable="false"></div>
-                    <div class="descpg3" >smart phone</div>
-                    <div class="titlepg3">Blaze L21</div>
-                    <div class="boxpg3" >
-                    <div class="pricepg3">50k</div>
-                    <button class="btnpg3">buy now</button>
-                    </div>
-                </div>
-               
-    
-                <div class="cardpg3">
-                    <div class="imgpg3"><img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png" draggable="false"></div>
-                    <div class="descpg3" >smart phone</div>
-                    <div class="titlepg3">Blaze L21</div>
-                    <div class="boxpg3" >
-                    <div class="pricepg3">50k</div>
-                    <button class="btnpg3">buy now</button>
-                    </div>
-                </div>
-    
-                <div class="cardpg3">
-                    <div class="imgpg3"><img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png" draggable="false"></div>
-                    <div class="descpg3" >smart phone</div>
-                    <div class="titlepg3">Blaze L21</div>
-                    <div class="boxpg3" >
-                    <div class="pricepg3">50k</div>
-                    <button class="btnpg3">buy now</button>
-                    </div>
-                </div>
-               
-               
-               
-                 
-            </div>
-            <i id="right" class="fa-solid fa-caret-right"></i>
-        </div>
-
-
-   
-
-    <script>
-const carousel = document.querySelector(".crouselpg2");
-firstImg = carousel.querySelectorAll("img")[0];
-arrowIcons = document.querySelectorAll(".wrapper i");
-
-
-let isDragStart = false, isDragging=false, prevPageX, prevScrollLeft, positionDiff;
-
-
-
-const showHideIcons = () =>{
-    let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
-    arrowIcons[0].style.display = carousel.scrollLeft == 0?  "none" : "block" ; 
-    arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth?  "none" : "block" ; 
-}
-
-arrowIcons.forEach(icon => {
-    icon.addEventListener("click",() =>{
-        let firstImgWidth = firstImg.clientWidth + 14;
-        carousel.scrollLeft += icon.id == "left" ? -firstImgWidth: firstImgWidth;
-        setTimeout (() => showHideIcons(), 60);
-    });
-});
-const autoSlide = () =>{
-
-    if(carousel.scrollLeft == (carousel.scrollWidth - carousel.clientWidth)) return;
-    positionDiff = Math.abs(positionDiff);
-    let firstImgWidth = firstImg.clientWidth + 14;
-    let valDifference = firstImgWidth - positionDiff;
-    if(carousel.scrollLeft > prevScrollLeft){
-        return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-    }return carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-}
-
-const dragStart = (e) =>{
-    isDragStart = true;
-    prevPageX = e.pageX || e.touches[0].pageX;
-    prevScrollLeft = carousel.scrollLeft;
-}
-
-
-const dragging = (e) =>{
-    if(!isDragStart) return;
-    e.preventDefault();
-    isDragging=true;
-    carousel.classList.add("dragging");
-    positionDiff = ( e.pageX || e.touches[0].pageX) - prevPageX;
-    carousel.scrollLeft = prevScrollLeft - positionDiff;
-    showHideIcons();
-}
-
-const dragStop = () =>{
-    isDragStart = false;
-    carousel.classList.remove("dragging");
-    if(!isDragging)return;
-    isDragging=false;
-    autoSlide();
-}
-
-carousel.addEventListener("mousedown", dragStart) ;
-carousel.addEventListener("touchstart", dragStart) ;
-
-carousel.addEventListener("mousemove", dragging) ;
-carousel.addEventListener("touchmove", dragging) ;
-
-carousel.addEventListener("mouseup", dragStop) ;
-carousel.addEventListener("mouseleave", dragStop) ;
-carousel.addEventListener("touchend", dragStop) ;
-
-    </script>
-
-
-    </section>
-
-
-    <section class="secpg3">
-        <div class="wrapper2">
-            <i id="left2" class="fa-solid fa-caret-left"></i>
-            <div class="carouselpg22">
-                <div class="cardpg3" id="firstcard">
-                    <div class="imgpg3">
-                        <img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png" draggable="false">
-                    </div>
-                    <div class="descpg3">smart phone</div>
-                    <div class="titlepg3">Blaze L21</div>
-                    <div class="boxpg3">
-                        <div class="pricepg3">50k</div>
-                        <button class="btnpg3">buy now</button>
-                    </div>
-                </div>
-
-                <div class="cardpg3" >
-                    <div class="imgpg3">
-                        <img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png" draggable="false">
-                    </div>
-                    <div class="descpg3">smart phone</div>
-                    <div class="titlepg3">Blaze L21</div>
-                    <div class="boxpg3">
-                        <div class="pricepg3">50k</div>
-                        <button class="btnpg3">buy now</button>
-                    </div>
-                </div>
-
-                <div class="cardpg3" >
-                    <div class="imgpg3">
-                        <img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png" draggable="false">
-                    </div>
-                    <div class="descpg3">smart phone</div>
-                    <div class="titlepg3">Blaze L21</div>
-                    <div class="boxpg3">
-                        <div class="pricepg3">50k</div>
-                        <button class="btnpg3">buy now</button>
-                    </div>
-                </div>
-
-
-                <div class="cardpg3" >
-                    <div class="imgpg3">
-                        <img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png" draggable="false">
-                    </div>
-                    <div class="descpg3">smart phone</div>
-                    <div class="titlepg3">Blaze L21</div>
-                    <div class="boxpg3">
-                        <div class="pricepg3">50k</div>
-                        <button class="btnpg3">buy now</button>
-                    </div>
-                </div>
-
-
-                <div class="cardpg3" >
-                    <div class="imgpg3">
-                        <img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png" draggable="false">
-                    </div>
-                    <div class="descpg3">smart phone</div>
-                    <div class="titlepg3">Blaze L21</div>
-                    <div class="boxpg3">
-                        <div class="pricepg3">50k</div>
-                        <button class="btnpg3">buy now</button>
-                    </div>
-                </div>
-
-
-                <div class="cardpg3" >
-                    <div class="imgpg3">
-                        <img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png" draggable="false">
-                    </div>
-                    <div class="descpg3">smart phone</div>
-                    <div class="titlepg3">Blaze L21</div>
-                    <div class="boxpg3">
-                        <div class="pricepg3">50k</div>
-                        <button class="btnpg3">buy now</button>
-                    </div>
-                </div>
-
-
-                <div class="cardpg3" >
-                    <div class="imgpg3">
-                        <img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png" draggable="false">
-                    </div>
-                    <div class="descpg3">smart phone</div>
-                    <div class="titlepg3">Blaze L21</div>
-                    <div class="boxpg3">
-                        <div class="pricepg3">50k</div>
-                        <button class="btnpg3">buy now</button>
-                    </div>
-                </div>
-                <!-- Repeat the cardpg3 div as needed -->
-            </div>
-            <i id="right2" class="fa-solid fa-caret-right"></i>
-        </div>
-    
+        <div id="upper">
       
-    
-        <script>
-            const carousel2 = document.querySelector(".carouselpg22");
-            const firstImg2 = carousel2.querySelectorAll("img")[0];
-            const arrowIcons2 = document.querySelectorAll(".wrapper2 i");
-    
-            let isDragStart2 = false,
-                isDragging2 = false,
-                prevPageX2,
-                prevScrollLeft2,
-                positionDiff2;
-    
-            const showHideIcons2 = () => {
-                let scrollWidth2 = carousel2.scrollWidth - carousel2.clientWidth;
-                arrowIcons2[0].style.display = carousel2.scrollLeft == 0 ? "none" : "block";
-                arrowIcons2[1].style.display = carousel2.scrollLeft == scrollWidth2 ? "none" : "block";
-            }
-    
-            arrowIcons2.forEach(icon => {
-                icon.addEventListener("click", () => {
-                    let firstImgWidth2 = firstImg2.clientWidth + 14;
-                    carousel2.scrollLeft += icon.id == "left2" ? -firstImgWidth2 : firstImgWidth2;
-                    setTimeout(() => showHideIcons2(), 60);
-                });
-            });
-    
-            const autoSlide2 = () => {
-                if (carousel2.scrollLeft == (carousel2.scrollWidth - carousel2.clientWidth)) return;
-                positionDiff2 = Math.abs(positionDiff2);
-                let firstImgWidth2 = firstImg2.clientWidth + 14;
-                let valDifference2 = firstImgWidth2 - positionDiff2;
-                if (carousel2.scrollLeft > prevScrollLeft2) {
-                    return carousel2.scrollLeft += positionDiff2 > firstImgWidth2 / 3 ? valDifference2 : -positionDiff2;
-                }
-                return carousel2.scrollLeft -= positionDiff2 > firstImgWidth2 / 3 ? valDifference2 : -positionDiff2;
-            }
-    
-            const dragStart2 = (e) => {
-                isDragStart2 = true;
-                prevPageX2 = e.pageX || e.touches[0].pageX;
-                prevScrollLeft2 = carousel2.scrollLeft;
-            }
-    
-            const dragging2 = (e) => {
-                if (!isDragStart2) return;
-                e.preventDefault();
-                isDragging2 = true;
-                carousel2.classList.add("dragging");
-                positionDiff2 = (e.pageX || e.touches[0].pageX) - prevPageX2;
-                carousel2.scrollLeft = prevScrollLeft2 - positionDiff2;
-                showHideIcons2();
-            }
-    
-            const dragStop2 = () => {
-                isDragStart2 = false;
-                carousel2.classList.remove("dragging");
-                if (!isDragging2) return;
-                isDragging2 = false;
-                autoSlide2();
-            }
-    
-            carousel2.addEventListener("mousedown", dragStart2);
-            carousel2.addEventListener("touchstart", dragStart2);
-            carousel2.addEventListener("mousemove", dragging2);
-            carousel2.addEventListener("touchmove", dragging2);
-            carousel2.addEventListener("mouseup", dragStop2);
-            carousel2.addEventListener("mouseleave", dragStop2);
-            carousel2.addEventListener("touchend", dragStop2);
-        </script>
-    </section>
-    
+            <div id="left-navigation">
+                <div id="back-page8"> > </div>
+            </div>  
+            <div id="rignt-page8">
+                <!--card start-->
+                <div class="cardpg3" id="first-caed8">
+                    <div class="imgpg3"><img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                    <div class="descpg3">smart phone</div>
+                    <div class="titlepg3">Blaze L21</div>
+                    <div class="boxpg3">
+                        <div class="pricepg3">50k</div>
+                        <button class="btnpg3">buy now</button>
+                    </div>
+                </div>
+        
+        
+                <div class="cardpg3">
+                    <div class="imgpg3"><img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                    <div class="descpg3">smart phone</div>
+                    <div class="titlepg3">Blaze L21</div>
+                    <div class="boxpg3">
+                        <div class="pricepg3">50k</div>
+                        <button class="btnpg3">buy now</button>
+                    </div>
+                </div>
+        
+                <div class="cardpg3">
+                    <div class="imgpg3"><img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                    <div class="descpg3">smart phone</div>
+                    <div class="titlepg3">Blaze L21</div>
+                    <div class="boxpg3">
+                        <div class="pricepg3">50k</div>
+                        <button class="btnpg3">buy now</button>
+                    </div>
+                </div>
+                <div class="cardpg3">
+                    <div class="imgpg3"><img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                    <div class="descpg3">smart phone</div>
+                    <div class="titlepg3">Blaze L21</div>
+                    <div class="boxpg3">
+                        <div class="pricepg3">50k</div>
+                        <button class="btnpg3">buy now</button>
+                    </div>
+                </div>
+                <div class="cardpg3">
+                    <div class="imgpg3"><img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                    <div class="descpg3">smart phone</div>
+                    <div class="titlepg3">Blaze L21</div>
+                    <div class="boxpg3">
+                        <div class="pricepg3">50k</div>
+                        <button class="btnpg3">buy now</button>
+                    </div>
+                </div>
+                <div class="cardpg3">
+                    <div class="imgpg3"><img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                    <div class="descpg3">smart phone</div>
+                    <div class="titlepg3">Blaze L21</div>
+                    <div class="boxpg3">
+                        <div class="pricepg3">50k</div>
+                        <button class="btnpg3">buy now</button>
+                    </div>
+                </div>
+                <div class="cardpg3">
+                    <div class="imgpg3"><img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                    <div class="descpg3">smart phone</div>
+                    <div class="titlepg3">Blaze L21</div>
+                    <div class="boxpg3">
+                        <div class="pricepg3">50k</div>
+                        <button class="btnpg3">buy now</button>
+                    </div>
+                </div>
+                <div class="cardpg3">
+                    <div class="imgpg3"><img src="/images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                    <div class="descpg3">smart phone</div>
+                    <div class="titlepg3">Blaze L21</div>
+                    <div class="boxpg3">
+                        <div class="pricepg3">50k</div>
+                        <button class="btnpg3">buy now</button>
+                    </div>
+                </div>
+        
+        
+        
+        
+                <!-- Repeat card as needed -->
+            </div>
+            <div id="right-navigation">
+                <div id="forward-page8"> > </div>
+            </div>
+          
+     
+        
 
-   
-</div>
+        </div>
+
+        <div id="lower">
+            <div id="left-navigationl">
+                <div id="back-page8l"> > </div>
+            </div>  
+            <div id="rignt-page8l">
+                <!--card start-->
+                <div class="cardpg3" id="first-caed8">
+                    <div class="imgpg3"><img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                    <div class="descpg3">smart phone</div>
+                    <div class="titlepg3">Blaze L21</div>
+                    <div class="boxpg3">
+                        <div class="pricepg3">50k</div>
+                        <button class="btnpg3">buy now</button>
+                    </div>
+                </div> 
+
+                <div class="cardpg3" id="first-caed8">
+                    <div class="imgpg3"><img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                    <div class="descpg3">smart phone</div>
+                    <div class="titlepg3">Blaze L21</div>
+                    <div class="boxpg3">
+                        <div class="pricepg3">50k</div>
+                        <button class="btnpg3">buy now</button>
+                    </div>
+                </div> 
+
+                <div class="cardpg3" id="first-caed8">
+                    <div class="imgpg3"><img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                    <div class="descpg3">smart phone</div>
+                    <div class="titlepg3">Blaze L21</div>
+                    <div class="boxpg3">
+                        <div class="pricepg3">50k</div>
+                        <button class="btnpg3">buy now</button>
+                    </div>
+                </div> 
+
+                <div class="cardpg3" id="first-caed8">
+                    <div class="imgpg3"><img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                    <div class="descpg3">smart phone</div>
+                    <div class="titlepg3">Blaze L21</div>
+                    <div class="boxpg3">
+                        <div class="pricepg3">50k</div>
+                        <button class="btnpg3">buy now</button>
+                    </div>
+                </div> 
+
+                <div class="cardpg3" id="first-caed8">
+                    <div class="imgpg3"><img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                    <div class="descpg3">smart phone</div>
+                    <div class="titlepg3">Blaze L21</div>
+                    <div class="boxpg3">
+                        <div class="pricepg3">50k</div>
+                        <button class="btnpg3">buy now</button>
+                    </div>
+                </div> 
+
+                <div class="cardpg3" id="first-caed8">
+                    <div class="imgpg3"><img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                    <div class="descpg3">smart phone</div>
+                    <div class="titlepg3">Blaze L21</div>
+                    <div class="boxpg3">
+                        <div class="pricepg3">50k</div>
+                        <button class="btnpg3">buy now</button>
+                    </div>
+                </div> 
+
+                <div class="cardpg3" id="first-caed8">
+                    <div class="imgpg3"><img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                    <div class="descpg3">smart phone</div>
+                    <div class="titlepg3">Blaze L21</div>
+                    <div class="boxpg3">
+                        <div class="pricepg3">50k</div>
+                        <button class="btnpg3">buy now</button>
+                    </div>
+                </div> 
+
+                <div class="cardpg3" id="first-caed8">
+                    <div class="imgpg3"><img src="./images/Screenshot 2024-07-11 at 10.57.24 AM.png"></div>
+                    <div class="descpg3">smart phone</div>
+                    <div class="titlepg3">Blaze L21</div>
+                    <div class="boxpg3">
+                        <div class="pricepg3">50k</div>
+                        <button class="btnpg3">buy now</button>
+                    </div>
+                </div> 
+
+                              <!-- More cards... -->
+            </div>
+            <div id="right-navigationl">
+                <div id="forward-page8l"> > </div>
+            </div>
+        </div>
+        
+    
+    </div>
+
+
 <div id="page4">
     <div id="container">
         <img src="./images/camera round.jpg" alt="">
@@ -585,8 +451,6 @@ carousel.addEventListener("touchend", dragStop) ;
 
 </div>
 
-
-
 <div id="page7">
     <div class="container6">
       <div class="c">
@@ -602,48 +466,17 @@ carousel.addEventListener("touchend", dragStop) ;
         </div>
       </div>
     </div>
+
+
+    <script src="script2.js"></script>
+
 </div>
-  
-   
 
-    <script>
-
-let dogR = document.querySelector('.d_right');
-let dogL = document.querySelector('.d_left');
-let container = document.querySelector('.container6');
-
-gsap.registerPlugin(ScrollTrigger);
-
-let tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: container,
-    pin: true,
-    start: "top top",
-    end: "+=500",
-    scrub: 0.2,
-  },
-
-});
-
-tl.to(dogR, {
-  translateX: "60vw",
-  rotation: "45",
-  duration: 1.5,
-})
-tl.to(dogL, {
-  translateX: "-60vw",
-  duration: 1.5,
-  rotation: "-45",
-}, '-=1.5')
-
-    </script>
-
- <div id="page_8">
-    
-    <video loop autoplay muted src="./images/Behold the Glory of Storm _ Launching on 21.12.23 (360p).mp4"></video>
- </div>
+<div id="page9">
 
 
+
+</div>
 
     <div class="pre-footer">
         <div class="container-prefooter">
@@ -693,6 +526,177 @@ tl.to(dogL, {
         </div>
     </div>
 
+<div id="page6">
+
+    <div class="above-footer">
+        <div class="above-footer-box">
+        <div class="social-links">
+           
+            <ul>
+                <li><a href="https://www.facebook.com/lavamobiles"><i class="fa-brands fa-facebook" ></i></a> </li>
+                <li><a href="  https://x.com/LAVAMobile"><i class="fa-brands fa-twitter" ></i></a> </li>
+                <li><a href="https://www.linkedin.com/company/lava-international-limited/?originalSubdomain=in"><i class="fa-brands fa-linkedin" ></i></a> </li>
+                <li><a href="https://www.youtube.com/user/LavaMobiles"><i class="fa-brands fa-youtube" ></i></a> </li>
+                <li><a href="https://www.instagram.com/lava_mobiles/"><i class="fa-brands fa-instagram" ></i></a> </li>
+                
+            </ul>
+        </div>
+    
+        <div class="social-links-txt"><h3>Connect with us</h3></div>
+    
+        <div class="above-footer-txt">
+            <p>&copy2024  LAVA INTERNATIONAL LIMITED.   All Rights Reserved</p>
+        </div>
+    </div>
+    </div>
+    
+    
+    <hr id="hr">
+    
+    <!--FOOTER PAGE LAST-->
+    
+    
+    <footer class="footer-page6">
+        <div class="container-page6">
+            <div class="row">
+    
+    <div class="footer-col">
+        <div class="logo">
+          
+        </div>
+        <div class="mailtxt">Stay updated via email!</div>
+        <div class="form">
+           
+            <form action=""></form>
+                <input type="text" placeholder="Email here">
+                <button><i class="fa fa-paper-plane"></i> </button>
+            </form>
+        </div>
+    </div>
+    
+    
+    <div class="footer-col">
+        <h4>ABOUT US</h4>
+        <ul>
+            <li><a href="#">About Lava</a></li>
+            <li><a href="#">Press & Media</a></li>
+            <li><a href="#">CSR Policy</a></li>
+            <li><a href="#">Speak Up</a></li>
+            <li><a href="#">Investor Relations</a></li>          
+            <li><a href="#">Blog</a></li>
+    
+        </ul>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <div class="footer-col">
+        <h4>CONTACT US</h4>
+    
+    
+    <div class="contact-details">
+        <i class="fa fa-location"></i> 
+        <a href="#">A-56, Sector – 64,<br> Noida- 201301, UP, India</a>
+    
+    </div>
+    
+    
+    
+    <div class="contact-details">
+        <i class="fa fa-phone"></i>
+        <a href="#">1860-500-5001 <br>
+            (10.00 AM-7.00 PM)
+    
+           </a>
+    </div>
+    
+    <div class="contact-details">
+        <i class="fa fa-envelope"></i>
+        <a id="mail" href="#"><p>mediainquiry@lavainternational.in</p></a>
+    
+    
+    </div>
+    
+        </div>
+    
+    
+    
+    
+    
+    
+                <div class="footer-col">
+                    <h4>PRODUCTS</h4>
+                    <ul>
+                        <li><a href="#">Smart Phones</a></li>
+                        <li><a href="#">Feature Phones</a></li>
+                        <li><a href="#">Tablets</a></li>
+                        <li><a href="#">Probuds</a></li>
+                        <li><a href="#">Prowatch</a></li>
+                        <li><a href="#">Earbuds</a></li>
+                        <li><a href="#">Batteries</a></li>
+                        <li><a href="#">More Accessories </a></li>
+                         
+    
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>LATEST PRODUCTS</h4>
+                    <ul>
+                        <li><a href="#">Blaze X</a></li>
+                        <li><a href="#">Blaze 2 5G</a></li>
+                        <li><a href="#">Blaze Pro 5G</a></li>
+                        <li><a href="#">Blaze 5G 8GB</a></li>
+                        <li><a href="#">Yuva 2</a></li>
+                        <li><a href="#">Blaze 5G</a></li>
+                        <li><a href="#">LZX409 Enterprise</a> </li>
+                    </ul>
+                </div>
+    
+    
+    
+                <div class="footer-col">
+                    <h4>LAVA CARE</h4>
+                    <ul>
+                        <li><a href="#">Track Your Order </a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Bulk Orders </a></li>
+                        <li><a href="#">Service@Home</a></li>
+                        <li><a href="#">Extended Warranty Check </a></li>
+                        <li><a href="#">Buy Extended Warranty </a></li>
+                        <li><a href="#">FAQs </a></li>    
+                    </ul>
+                </div>
+    
+    
+                
+    
+    <div class="hr"></div>
+    
+    
+    
+    
+            </div>
+        </div>
+    
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" title="Go to top">  <i class="fas fa-arrow-up"></i> </button>
+    
+    <script src="script.js"></script>
+    
+    
+    
+    
+    </footer>
+    
+    </div>
+    
+
 
 
     
@@ -703,188 +707,13 @@ tl.to(dogL, {
 
 <!-- ABOVE-FOOTER PAGE SECOND LAST-->
 
-<div id="page6">
-
-<div class="above-footer">
-    <div class="above-footer-box">
-    <div class="social-links">
-       
-        <ul>
-            <li><a href="https://www.facebook.com/lavamobiles"><i class="fa-brands fa-facebook" ></i></a> </li>
-            <li><a href="  https://x.com/LAVAMobile"><i class="fa-brands fa-twitter" ></i></a> </li>
-            <li><a href="https://www.linkedin.com/company/lava-international-limited/?originalSubdomain=in"><i class="fa-brands fa-linkedin" ></i></a> </li>
-            <li><a href="https://www.youtube.com/user/LavaMobiles"><i class="fa-brands fa-youtube" ></i></a> </li>
-            <li><a href="https://www.instagram.com/lava_mobiles/"><i class="fa-brands fa-instagram" ></i></a> </li>
-            
-        </ul>
-    </div>
-
-    <div class="social-links-txt"><h3>Connect with us</h3></div>
-
-    <div class="above-footer-txt">
-        <p>&copy2024  LAVA INTERNATIONAL LIMITED.   All Rights Reserved</p>
-    </div>
-</div>
-</div>
-
-
-<hr id="hr">
-
-<!--FOOTER PAGE LAST-->
-
-
-<footer class="footer-page6">
-    <div class="container-page6">
-        <div class="row">
-
-<div class="footer-col">
-    <div class="logo">
-      
-    </div>
-    <div class="mailtxt">Stay updated via email!</div>
-    <div class="form">
-       
-        <form action=""></form>
-            <input type="text" placeholder="Email here">
-            <button><i class="fa fa-paper-plane"></i> </button>
-        </form>
-    </div>
-</div>
-
-
-<div class="footer-col">
-    <h4>ABOUT US</h4>
-    <ul>
-        <li><a href="#">About Lava</a></li>
-        <li><a href="#">Press & Media</a></li>
-        <li><a href="#">CSR Policy</a></li>
-        <li><a href="#">Speak Up</a></li>
-        <li><a href="#">Investor Relations</a></li>          
-        <li><a href="#">Blog</a></li>
-
-    </ul>
-</div>
 
 
 
 
-
-
-
-<div class="footer-col">
-    <h4>CONTACT US</h4>
-
-
-<div class="contact-details">
-    <i class="fa fa-location"></i> 
-    <a href="#">A-56, Sector – 64,<br> Noida- 201301, UP, India</a>
-
-</div>
-
-
-
-<div class="contact-details">
-    <i class="fa fa-phone"></i>
-    <a href="#">1860-500-5001 <br>
-        (10.00 AM-7.00 PM)
-
-       </a>
-</div>
-
-<div class="contact-details">
-    <i class="fa fa-envelope"></i>
-    <a id="mail" href="#"><p>mediainquiry@lavainternational.in</p></a>
-
-
-</div>
-
-    </div>
-
-
-
-
-
-
-            <div class="footer-col">
-                <h4>PRODUCTS</h4>
-                <ul>
-                    <li><a href="#">Smart Phones</a></li>
-                    <li><a href="#">Feature Phones</a></li>
-                    <li><a href="#">Tablets</a></li>
-                    <li><a href="#">Probuds</a></li>
-                    <li><a href="#">Prowatch</a></li>
-                    <li><a href="#">Earbuds</a></li>
-                    <li><a href="#">Batteries</a></li>
-                    <li><a href="#">More Accessories </a></li>
-                     
-
-                </ul>
-            </div>
-            
-            <div class="footer-col">
-                <h4>LATEST PRODUCTS</h4>
-                <ul>
-                    <li><a href="#">Blaze X</a></li>
-                    <li><a href="#">Blaze 2 5G</a></li>
-                    <li><a href="#">Blaze Pro 5G</a></li>
-                    <li><a href="#">Blaze 5G 8GB</a></li>
-                    <li><a href="#">Yuva 2</a></li>
-                    <li><a href="#">Blaze 5G</a></li>
-                    <li><a href="#">LZX409 Enterprise</a> </li>
-                </ul>
-            </div>
-
-
-
-            <div class="footer-col">
-                <h4>LAVA CARE</h4>
-                <ul>
-                    <li><a href="#">Track Your Order </a></li>
-                    <li><a href="#">Return Policy</a></li>
-                    <li><a href="#">Bulk Orders </a></li>
-                    <li><a href="#">Service@Home</a></li>
-                    <li><a href="#">Extended Warranty Check </a></li>
-                    <li><a href="#">Buy Extended Warranty </a></li>
-                    <li><a href="#">FAQs </a></li>    
-                </ul>
-            </div>
-
-
-            
-
-<div class="hr"></div>
-
-
-
-
-        </div>
-    </div>
-
-
-<!-- Scroll to Top Button -->
-<button id="scrollToTopBtn" title="Go to top">  <i class="fas fa-arrow-up"></i> </button>
-
-<script src="script.js"></script>
-
-
-
-
-</footer>
-
-</div>
-
-
-
-
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     
-<!-- GSAP Core -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-<!-- ScrollTrigger Plugin -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-
+<script src="script2.js"></script>
 
     <script src="script.js"></script>
 </body>

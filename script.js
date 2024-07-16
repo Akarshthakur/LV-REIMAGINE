@@ -101,5 +101,32 @@ tl.to(dogL, {
   translateX: "-60vw",
   duration: 1.5,
   rotation: "-45",
-}, '-=1.5')
+}, '-=1.5') ; 
 
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+ScrollTrigger.create({
+    start: 'top -20%',
+    end: 99999,
+    toggleClass: {className: 'scrolled', targets: '#navbar'}
+});
+
+// Animation on scroll
+gsap.from(".navbar", {
+    y: -100,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+});
+
+// Fade-in effect for content
+const content = document.querySelectorAll('.content');
+content.forEach(section => {
+    ScrollTrigger.create({
+        trigger: section,
+        start: "top 80%",
+        onEnter: () => section.classList.add('active'),
+    });
+});
