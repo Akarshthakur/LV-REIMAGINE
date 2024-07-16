@@ -947,21 +947,6 @@ lower part of productsection
         transform: translateX(-110%);
     }
 }
-#backgroundpage{
-    height: 90vh;
-    width: 100vw;
-
-    margin-bottom: 4vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: relative;
-}
-#backgroundpage img{
-    object-fit: cover;
-}
-
-
-
 
 
 /*above-footer*/
@@ -1308,6 +1293,27 @@ transition: 0.2s ease;
 
 .d_right {
   margin-left: -21px;
+}
+
+#page_8{
+    height: 100vh;
+    width: 100vw; 
+    background-image: url(./images/green\ robot.jpg);
+    background-size: cover;
+    background-position: top; 
+    opacity: 1;
+     
+}
+
+#page_8  video{
+    height: 80%;
+    width: 90%;
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 4.5vw;
+    border-radius: 50px;
 }
 
 
