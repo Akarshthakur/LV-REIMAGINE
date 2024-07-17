@@ -19,6 +19,61 @@ body {
 
 
 
+.marquee {
+    position: fixed;
+    bottom: 0;
+  left: 0;
+	display: flex;
+	padding: 0 15px 0 20px;
+	font: 400 2.25rem/1 "Bagel Fat One", sans-serif;
+	writing-mode: vertical-lr;
+	transform-origin: 50% 50%;
+	transform: rotate(-180deg);
+	white-space: nowrap;
+	text-transform: uppercase;
+	background: #333;
+	color: #FAFAFA;
+	text-align: center;
+    z-index: 1;
+	
+	span {
+		display: block;
+		padding: 10px 0;
+	}
+}
+
+
+
+
+.marquee2 {
+    position: fixed;
+    bottom: 0;
+  right: 0;
+	display: flex;
+	padding: 0 15px 0 20px;
+	font: 400 2.25rem/1 "Bagel Fat One", sans-serif;
+	writing-mode: vertical-lr;
+	transform-origin: 50% 50%;
+	transform: rotate(-180deg);
+	white-space: nowrap;
+	text-transform: uppercase;
+	background: #333;
+	color: #FAFAFA;
+	text-align: center;
+    z-index: 1;
+	
+	span {
+		display: block;
+		padding: 10px 0;
+	}
+}
+
+
+
+
+
+
+
 #baa video {
     height: 100vh;
     width: 100%;
@@ -50,49 +105,24 @@ body {
     }
 
 
-#page1{
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.105); /* Transparent background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
+    .page1{
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        z-index: 9;
+        padding-top: 12vw;
+    }
 
-    .content-container {
-        max-width: 800px;
-        padding: 0 20px;
-    }
     
-    .headline {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
-    
-   
-    
-    .cta-button {
-        display: inline-block;
-        padding: 0.5rem 1rem;
-        color: white;
-        background-color: crimson;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background-color 0.3s;
-    }
-    
-    .cta-button:hover {
-        background-color: #1e9c4d;
-    }
-    
+  
+
+
 
 
 #page2{
     width: 100vw;
 height: 100vh;
-
+z-index: 9;
 background-color: black;
 
 
@@ -1516,6 +1546,3 @@ color: #f3ebeb;
     }
         
     
-
-
-
