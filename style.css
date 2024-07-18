@@ -763,68 +763,48 @@ h4{
 /*page 3*/
 
 /*page 3 end*/
-
 #page4{
-    height: 55vh;
+    height: 50vh;
     width: 100vw;
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
     background-color:black;
-    
 }
 #container{
     height: 100%;
     width: 100%;
     display: inline-block;
+    margin-left: 1vw;
+    padding: 2.5vw;
+    padding-left: 1vw;
+    padding-bottom: 4vh;
     animation-name: anime;
-    animation-duration: 22s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-#container .elem_{
-    height: 50vh;
-    width: 14vw;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    padding-right: 1vw;
-    
- 
-}
-
-.elem_ img{
+#page4 img{
     height: 100%;
-    width: 100%;
-    margin-top: 1.5vw ;
+    width: 15vw;
+    margin: 1vw 2.5vw;
     border-radius: 25px;
     object-fit: cover;
     object-position: top;
-    position: relative;
-}
-#overlay{
-    height: 20%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    padding: 1vw 5vw;
-    color: #4a4242;
-    background-color: rgba(85, 84, 84, 0.07);
-    backdrop-filter: blur(5px);
-}
+    padding-bottom: 4vh;
 
+}
 
 @keyframes anime {
     from{
         transform: translateX(0);
     }
     to{
-        transform: translateX(-100%);
+        transform: translateX(-110%);
     }
 }
-
 
 /*above-footer*/
 .above-footer{
