@@ -16,6 +16,13 @@ body {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+#main{
+    height:auto;
+    width: 100%;
+     overflow-x: hidden;
+    
+    position: relative;
+}
 
 
 
@@ -80,11 +87,6 @@ body {
 }
 
 
-
-
-
-
-
 #baa video {
     height: 100vh;
     width: 100%;
@@ -95,26 +97,6 @@ body {
     
 } 
 
-#main{
-    height:auto;
-    width: 100%;
-     overflow-x: hidden;
-    
-    position: relative;
-}
-
-
-
-    h1{
-        color:whitesmoke;
-        font-size: 20px;
-        font-family:Arial ,sans-serif;
-        cursor: pointer;
-    }
-    h1:hover{
-        color:#BB135C;
-    }
-
 
     .page1{
         min-height: 100vh;
@@ -123,11 +105,7 @@ body {
         z-index: 9;
         padding-top: 12vw;
     }
-
     
-  
-
-
 
 
 #page2{
@@ -135,10 +113,7 @@ body {
 height: 100vh;
 z-index: 9;
 background-color: black;
-
-
 }
-
 
 #container-page2{
 display: flex;
@@ -150,15 +125,11 @@ justify-content: space-between;
 #left-page2{
 height:100vh;
 width: 40vw;
-
 left: 0  !important;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-
-
-
 }
 
 .image-container {
@@ -168,7 +139,6 @@ justify-content: center;
     height: fit-content;
     border-radius: 8px;
     overflow: hidden;
-   
     transition: box-shadow 300ms ease-in-out;
 }
 
@@ -187,13 +157,9 @@ justify-content: center;
 #right-page2{
 height: 100vh;
 width: 60vw;
-
 display: flex;
 align-items: center;
-
 flex-direction: column;
-
-
 }
 
 #details-page2{
@@ -204,7 +170,17 @@ padding-left: 2vw;
 padding-right: 3vw;
 padding-bottom: 2vw;
 border-bottom: 1.4px solid beige;
+}
 
+
+h1{
+    color:whitesmoke;
+    font-size: 20px;
+    font-family:Arial ,sans-serif;
+    cursor: pointer;
+}
+h1:hover{
+    color:#BB135C;
 }
 
 #details-page2 h1 {
