@@ -16,6 +16,13 @@ body {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+#main{
+    height:auto;
+    width: 100%;
+     overflow-x: hidden;
+    
+    position: relative;
+}
 
 
 
@@ -80,11 +87,6 @@ body {
 }
 
 
-
-
-
-
-
 #baa video {
     height: 100vh;
     width: 100%;
@@ -94,26 +96,6 @@ body {
     overflow-y: hidden;
     
 } 
-
-#main{
-    height:auto;
-    width: 100%;
-     overflow-x: hidden;
-    
-    position: relative;
-}
-
-
-
-    h1{
-        color:whitesmoke;
-        font-size: 20px;
-        font-family:Arial ,sans-serif;
-        cursor: pointer;
-    }
-    h1:hover{
-        color:#BB135C;
-    }
 
 
     #page1{
@@ -401,38 +383,10 @@ body {
         text-align: center;
         flex-shrink: 0;
     }
-    .carousel.showDetail .list .item:nth-child(2) .detail .specifications div p:nth-child(1){
-        font-weight: bold;
-    }
-    .carousel.carousel.showDetail .list .item:nth-child(2) .checkout button{
-        font-family: Poppins;
-        background-color: transparent;
-        border: 1px solid #5555;
-        margin-left: 5px;
-        padding: 5px 10px;
-        letter-spacing: 2px;
-        font-weight: 500;
-    }
-    .carousel.carousel.showDetail .list .item:nth-child(2) .checkout button:nth-child(2){
-        background-color: #3eff41;
-        color: #eee;
-    }
-    .carousel.showDetail .list .item:nth-child(2) .detail  .title,
-    .carousel.showDetail .list .item:nth-child(2) .detail  .des,
-    .carousel.showDetail .list .item:nth-child(2) .detail .specifications,
-    .carousel.showDetail .list .item:nth-child(2) .detail .checkout{
-        opacity: 0;
-        animation: showContent 0.5s 1s ease-in-out 1 forwards;
-    }
-    .carousel.showDetail .list .item:nth-child(2) .detail  .des{
-        animation-delay: 1.2s;
-    }
-    .carousel.showDetail .list .item:nth-child(2) .detail .specifications{
-        animation-delay: 1.4s;
-    }
-    .carousel.showDetail .list .item:nth-child(2) .detail .checkout{
-        animation-delay: 1.6s;
-    }
+
+    
+  
+
     .arrows{
         position: absolute;
         bottom: 10px;
@@ -474,81 +428,6 @@ body {
         /* opacity: 0; */
         transition: opacity 0.5s;
     }
-    .carousel.showDetail #back{
-        opacity: 1;
-    }
-    .carousel.showDetail #prev,
-    .carousel.showDetail #next{
-        opacity: 0;
-        pointer-events: none;
-    }
-    .carousel::before{
-        width: 500px;
-        height: 300px;
-        content: '';
-        background-image: linear-gradient(70deg, #3ace0d, blue);
-        position: absolute;
-        z-index: -1;
-        border-radius: 20% 30% 80% 10%;
-        filter: blur(150px);
-        top: 50%;
-        left: 50%;
-        transform: translate(-10%, -50%);
-        transition: 1s;
-    }
-    .carousel.showDetail::before{
-        transform: translate(-100%, -50%) rotate(90deg);
-        filter: blur(130px);
-    }
-    @media screen and (max-width: 991px){
-        /* ipad, tablets */
-        .carousel .list .item{
-            width: 90%;
-        }
-        .carousel.showDetail .list .item:nth-child(2) .detail .specifications{
-            overflow: auto;
-        }
-        .carousel.showDetail .list .item:nth-child(2) .detail .title{
-            font-size: 2em;
-        }
-    }
-    @media screen and (max-width: 767px){
-        /* mobile */
-        .carousel{
-            height: 600px;
-        }
-        .carousel .list .item{
-            width: 100%;
-            font-size: 10px;
-        }
-        
-        .carousel .list{
-            height: 100%;
-        }
-        .carousel .list .item:nth-child(2) .introduce{
-            width: 50%;
-        }
-        
-        .carousel .list .item img{
-            width: 40%;
-        }
-        .carousel.showDetail .list .item:nth-child(2) .detail{
-            backdrop-filter: blur(10px);
-            font-size: small;
-        }
-        .carousel .list .item:nth-child(2) .introduce .des,
-        .carousel.showDetail .list .item:nth-child(2) .detail .des{
-            height: 100px;
-            overflow: auto;
-        }
-        .carousel.showDetail .list .item:nth-child(2) .detail .checkout{
-            display: flex;
-            width: max-content;
-            float: right;
-        }
-    }
-
-
 
 
 #page2{
@@ -556,10 +435,7 @@ body {
 height: 100vh;
 z-index: 9;
 background-color: black;
-
-
 }
-
 
 #container-page2{
 display: flex;
@@ -571,15 +447,11 @@ justify-content: space-between;
 #left-page2{
 height:100vh;
 width: 40vw;
-
 left: 0  !important;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-
-
-
 }
 
 .image-container {
@@ -589,7 +461,6 @@ justify-content: center;
     height: fit-content;
     border-radius: 8px;
     overflow: hidden;
-   
     transition: box-shadow 300ms ease-in-out;
 }
 
@@ -608,13 +479,9 @@ justify-content: center;
 #right-page2{
 height: 100vh;
 width: 60vw;
-
 display: flex;
 align-items: center;
-
 flex-direction: column;
-
-
 }
 
 #details-page2{
@@ -625,7 +492,17 @@ padding-left: 2vw;
 padding-right: 3vw;
 padding-bottom: 2vw;
 border-bottom: 1.4px solid beige;
+}
 
+
+h1{
+    color:whitesmoke;
+    font-size: 20px;
+    font-family:Arial ,sans-serif;
+    cursor: pointer;
+}
+h1:hover{
+    color:#BB135C;
 }
 
 #details-page2 h1 {
@@ -888,45 +765,63 @@ h4{
 /*page 3 end*/
 
 #page4{
-    height: 50vh;
+    height: 55vh;
     width: 100vw;
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
     background-color:black;
+    
 }
 #container{
     height: 100%;
     width: 100%;
     display: inline-block;
-    margin-left: 1vw;
-    padding: 2.5vw;
-    padding-left: 1vw;
-    padding-bottom: 4vh;
     animation-name: anime;
-    animation-duration: 25s;
+    animation-duration: 22s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-#page4 img{
+#container .elem_{
+    height: 50vh;
+    width: 14vw;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1vw;
+    
+ 
+}
+
+.elem_ img{
     height: 100%;
-    width: 15vw;
-    margin: 1vw 2.5vw;
+    width: 100%;
+    margin-top: 1.5vw ;
     border-radius: 25px;
     object-fit: cover;
     object-position: top;
-    padding-bottom: 4vh;
-
+    position: relative;
 }
+#overlay{
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 1vw 5vw;
+    color: #4a4242;
+    background-color: rgba(85, 84, 84, 0.07);
+    backdrop-filter: blur(5px);
+}
+
 
 @keyframes anime {
     from{
         transform: translateX(0);
     }
     to{
-        transform: translateX(-110%);
+        transform: translateX(-100%);
     }
 }
 
@@ -937,9 +832,9 @@ h4{
     margin: 0;
     box-sizing: border-box;
     background-color: black;
-display:flex ;
-justify-content: center;
-    }
+    display:flex ;
+    justify-content: center;
+ }
 
 .above-footer-box{
 width: 100%;
