@@ -43,7 +43,18 @@ body {
 }
 
 
-
+#purple{
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    background-color: #EDBFFF;
+    opacity: 0;
+    display: none;
+    transition: opacity ease 1s;
+    
+}
 
 .marquee2 {
     position: fixed;

@@ -240,3 +240,94 @@ tl3.to(dogL, {
     rotation: "-45",
     duration: 1.5
 }, '-=1.5');
+
+
+// adding gsap to all the remaing page 
+
+
+gsap.from(".image-container , #details-page2 , #price-section , #about-page2   ",{
+    y: 190,
+  opacity: 0,
+  delay:0.3,
+  duration: 4,
+  yoyo: true,
+  scrollTrigger: {
+    trigger: "#page2",
+    scroller: "body",
+    // markers:true,
+    start: "top 60%",
+    end: "top 30%",
+    scrub: 2,
+
+  },
+  })
+  
+
+  gsap.from(" .cardpg3  ",{
+    y: 190,
+  
+  opacity: 0,
+  delay:0.3,
+  duration: 4,
+  scrollTrigger: {
+    trigger: "#page8",
+    scroller: "body",
+    stagger:0.15,
+    // markers:true,
+    start: "top 60%",
+    end: "top 30%",
+    scrub: 2,
+  
+  },
+  })
+
+
+  gsap.from(" .c ,.d ",{
+    y: 190,
+  
+  opacity: 0,
+  delay:0.3,
+  duration: 4,
+  scrollTrigger: {
+    trigger: "#page7",
+    scroller: "body",
+    stagger:0.15,
+    // markers:true,
+    start: "top 60%",
+    end: "top 30%",
+    scrub: 2,
+  
+  },
+  })
+
+
+
+  gsap.from(" .inner-03 , .row-03 ",{
+    y: 190,
+  
+  opacity: 0,
+  delay:0.3,
+  duration: 4,
+  scrollTrigger: {
+    trigger: ".testinomials-03",
+    scroller: "body",
+    stagger:0.15,
+    // markers:true,
+    start: "top 60%",
+    end: "top 30%",
+    scrub: 2,
+  
+  },
+  })
+
+
+  // museenter and mouse leave function 
+
+
+
+  document.addEventListener("mousemove" , function(dets){
+
+   
+  })
+  
+
