@@ -28,10 +28,47 @@
 
 </head>
 <body>
+
+
+
+    <div id="main">
+
+      
+
+        <div class="marquee">
+            <span>What's on</span>
+            <span aria-hidden="true">What's on</span>
+            <span aria-hidden="true">What's on</span>
+            <span aria-hidden="true">What's on</span>
+            <span aria-hidden="true">What's on</span>
+     
+     
+        
+        
+        </div>
+    
+    
+        <div class="marquee2">
+            <span>What's on</span>
+            <span aria-hidden="true">What's on</span>
+            <span aria-hidden="true">What's on</span>
+            <span aria-hidden="true">What's on</span>
+            <span aria-hidden="true">What's on</span>
+       
+        <script>
+
+        </script>
+        
+        </div>
+    
+
+
     <div id="container-cursor">
-        <div class="cursor cursor--large">  </div>
+    
+        <div class="cursor cursor--large"> </div>
         <div class="cursor cursor--small">  </div>
-      </div>
+
+   </div>
    
         <div id="baa">
             <video
@@ -45,8 +82,9 @@
         
     
     </div>
-     
- <div id="main">
+    <div id="purple">
+        </div>
+
 
     <div class="navbar-container">
         <header id="navbar" class="navbar">
@@ -65,46 +103,16 @@
                 </div>
             </nav>
         </header>
+
+
+
     </div>
 
 
-    <div id="page1">
-        <div class="content-container">
-            <h1 class="headline">Welcome to Our Website</h1>
-           
-            <h1 class="subheadline">Explore our amazing products and services</h1>
-            <a href="#product" class="cta-button">Learn More</a>
-       
-        </div>
-
-  <script>
-
-    
-gsap.registerPlugin(ScrollTrigger);
-
-
-const shashi = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#page2", 
-        start: "top center", 
-        end: "+=100%",
-        scrub: 1, 
-        pin: true, 
-        anticipatePin: 1, 
-    }
-});
-
-
-shashi.from(".headline", { x: "-100%", opacity: 0 })
-  .from(".subheadline", { x: "100%", opacity: 0 }, "-=0.5"); 
-
-
-
-  </script>
-
-        
+    <div class="page1">
+            
+     
     </div>
-
         <div id="page2">
  <div id="container-page2">
 <div id="left-page2">
@@ -117,30 +125,7 @@ shashi.from(".headline", { x: "-100%", opacity: 0 })
             <img src="./images/blaze-curve-list-img.png" alt="" class="img" />
         </div>
     </div>
-    <script>
-        const imageContainer = document.querySelector(".image-container");
-        const img = imageContainer.querySelector(".img");
-
-        imageContainer.addEventListener("mousemove", (evt) => {
-            let rect = imageContainer.getBoundingClientRect();
-            let x = evt.clientX - rect.left;
-            let y = evt.clientY - rect.top;
-            img.style.transformOrigin = `${x}px ${y}px`;
-            img.style.transform = "scale(1.8)";
-            img.style.filter = "brightness(1.2)";
-            imageContainer.style.cursor = "zoom-in";
-        });
-
-        imageContainer.addEventListener("mouseleave", () => {
-            img.style.transformOrigin = "center center";
-            img.style.transform = "scale(1)";
-            img.style.filter = "brightness(1)";
-            imageContainer.style.cursor = "default";
-        });
-    </script>
-    
  
-    
 </div>
 
 <div id="right-page2">
@@ -179,46 +164,7 @@ shashi.from(".headline", { x: "-100%", opacity: 0 })
     </button>  
 
 
-      <script>
-        
-document.getElementById('btn-ripple').addEventListener('click', function(e) {
-    gsap.fromTo('.ripples' , {
-      border: '1px solid #fff',
-      left: e.offsetX,
-      top: e.offsetY,
-      height: 0,
-      width: 0,
-      opacity: 1,
-    }, {
-      border: '0px solid #fff',
-      height: 60,
-      width: 60,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out"
-    })
-  })
-
-
-  document.getElementById('btn-ripplea').addEventListener('click', function(e) {
-    gsap.fromTo('.ripplesa' , {
-      border: '1px solid #fff',
-      left: e.offsetX,
-      top: e.offsetY,
-      height: 0,
-      width: 0,
-      opacity: 1,
-    }, {
-      border: '0px solid #fff',
-      height: 60,
-      width: 60,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out"
-    })
-  })
-      </script>
-
+     
 
 
 </div>
@@ -477,27 +423,11 @@ document.getElementById('btn-ripple').addEventListener('click', function(e) {
         </div>
       </div>
     </div>
-
-
-    <script src="script2.js"></script>
+   
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
 <!--REVIEW PAGE -03-->
-
-
-<div id="testinomial-body-03">
 
     <div class="testinomials-03">
         <div class="inner-03">
@@ -574,40 +504,6 @@ document.getElementById('btn-ripple').addEventListener('click', function(e) {
     
     
     </div>
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="page9">
-
-
-
-</div>
 
     <div class="pre-footer">
         <div class="container-prefooter">
@@ -815,61 +711,11 @@ document.getElementById('btn-ripple').addEventListener('click', function(e) {
     </div>
     
 
-
-
-    
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ABOVE-FOOTER PAGE SECOND LAST-->
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    
-<script src="script2.js"></script>
-
-    <script src="script.js"></script>
 </body>
 </html>
