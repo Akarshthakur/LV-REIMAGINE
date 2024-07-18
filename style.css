@@ -186,7 +186,7 @@ body {
     /* carousel */
     .carousel{
         position: relative;
-        height: 100vh;
+        height: 105vh;
         overflow: hidden;
         margin-top: -50px;
         background-color: black;
@@ -494,10 +494,11 @@ body {
     /*page-2 Start */
 
 #page2{
-    width: 100vw;
+width: 100vw;
 height: 100vh;
 z-index: 9;
 background-color: black;
+
 }
 
 #container-page2{
@@ -515,11 +516,12 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+border-radius: 25px;
 }
 
 .image-container {
-    width: fit-content;
-    max-width: 500px;
+    width: 33vw;
+    /* max-width: 500px; */
     max-height: 90vh;
     height: fit-content;
     border-radius: 8px;
@@ -528,9 +530,9 @@ justify-content: center;
 }
 
 .image-container img {
-    width: 95%;
+    width: 100%;
     top: 5vh !important;
-    height: 89vh;
+    height: 85vh;
     object-fit: cover;
     object-position: center;
     transition: transform 300ms ease-in-out, filter 300ms ease-in-out;
@@ -554,7 +556,7 @@ margin-top: 20vh;
 padding-left: 2vw;
 padding-right: 3vw;
 padding-bottom: 2vw;
-border-bottom: 1.4px solid beige;
+border-bottom: 1.4px solid rgb(245, 171, 62);
 }
 
 
@@ -562,14 +564,14 @@ h1{
     color:whitesmoke;
     font-size: 20px;
     font-family:Arial ,sans-serif;
-    cursor: pointer;
 }
 h1:hover{
-    color:#BB135C;
+    /* color:#BB135C; */
+    color: #ED1556;
 }
 
 #details-page2 h1 {
-    font-size: 2vw;
+    font-size: 1.3vw;
     line-height: 5vh;
 }
 
@@ -622,6 +624,7 @@ flex-direction: column;
     background-color: #ED1556;
     color: white;
     font-size: 1.3vw;
+    cursor: pointer;
 }
 
 .ripples {
@@ -643,6 +646,7 @@ flex-direction: column;
     background-color: #ED1556;
     color: white;
     font-size: 1.3vw;
+    cursor: pointer;
 }
 
 .ripplesa {
@@ -652,6 +656,10 @@ flex-direction: column;
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
+
+
+/* page-2 ends */
+
 
 .container-prefooter{
       max-width: 1500px;
