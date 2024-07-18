@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+
+<!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<!-- ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+
+
+</head>
+<body>
+    
+<div id="page5">      
+      <div class="orangeWrapper">
+        <section class="orange">
+          
+            
+        <div id="baa">
+            <video
+            autoplay
+            loop
+            muted
+            src="./images/Behold the Glory of Storm _ Launching on 21.12.23 (360p).mp4">
+        
+        </video>    
+      
+        
+    
+    </div>
+    
+    
+        </section>
+        
+
+    </div>
+
+</div>
+
+   <style>
+
+    #page5{
+
+        height: 100vh;
+        width: 100vw;
+        background-color:blue;
+
+        align-items: center;
+        justify-content: center;
+        background-image: url(./images/green\ robot.jpg);
+    }
+
+    #baa video {
+    height: 70vh;
+    width: 80vw;
+    object-fit: cover;
+    z-index: -1;
+   overflow-y: hidden;
+    
+} 
+
+.orange{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.line {
+  width: 100%;
+  max-width: 800px;
+  height: 8px;
+  margin: 0 0 10px 0;
+  position: relative;
+  display: inline-block;
+  background-color: rgb(205, 26, 26);
+}
+
+.orangeWrapper {
+  padding:0;
+  background-image: url(./images/green\ robot.jpg);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+   </style>
+
+      <script>
+gsap.registerPlugin(ScrollTrigger);
+
+
+
+// --- ORANGE PANEL ---
+
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".orangeWrapper",
+    scrub: true,
+    pin: true,
+    
+    start: "50% 50%",
+    end: "+=200%"
+  }
+})
+
+.from(".orange", {
+  scale: 0.5, 
+  ease: "none"
+})
+
+.from(".line-2", {
+  scaleX:0,
+  ease:"none",
+  transformOrigin:"left top"
+}, 0)
+
+
+
+
+      </script>
+
+
+
+
+</body>
+</html>
