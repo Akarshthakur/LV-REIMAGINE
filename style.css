@@ -2032,12 +2032,12 @@ color: #f3ebeb;
     /* page6 */
 
     .page6{
-        min-height: 100vh;
+       height: 110vh;
         width: 100%;
         z-index: 9;
         position: relative;
         padding: 1px 1px;
-        background-color: black;
+       background-color: black;
 
       }
       .elem-page6{
@@ -2054,13 +2054,14 @@ color: #f3ebeb;
         opacity: 0;
         transition: all ease-out 0.5s;
         transform: translateY(10%) rotate(2deg);
-        height: 60vh;
+        height: 65vh;
         width: 55vh;
         padding: 5vw;
       
       }
       .elem-page6 img:nth-child(1){
         left: 2%;
+
       }
       .elem-page6 img:nth-child(3){
         right: 5%;
@@ -2070,7 +2071,8 @@ color: #f3ebeb;
         position: relative;
         z-index: 9;
         overflow: hidden;
-        margin-bottom: 2vw;
+        margin-bottom: 1vw;
+   
       }
       .elem-page6 h1{
         font-size: 7vw;
@@ -2109,3 +2111,98 @@ margin-top: 3vw;
 margin-top: 12vh;
 
      }
+
+     
+@media (max-width: 480px) {
+
+
+    
+    .page6{
+       height: 60vh;
+        width: 100%;
+        z-index: 9;
+        position: relative;
+        padding: 1px 1px;
+        background-color: black;
+
+      }
+      .elem-page6{
+        /* background-color: salmon; */
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+       
+      
+      }
+      .elem-page6 img{
+        position: absolute;
+        opacity: 0;
+        transition: all ease-out 0.5s;
+        transform: translateY(10%) rotate(2deg);
+        height: 40vw;
+        width: 30vw;
+        
+     
+      
+      }
+      .elem-page6 img:nth-child(1){
+        left: 1%;
+     
+      }
+      .elem-page6 img:nth-child(3){
+        right: 1%;
+       
+
+     
+      }
+      .text-div{
+        height: 5vh;
+        position: relative;
+        z-index: 9;
+        overflow: hidden;
+        margin-bottom: 8vh;
+      }
+      .elem-page6 h1{
+        font-size: 10vw;
+        font-weight: 500;
+        transition: all ease-out 0.5s;
+      }
+      
+      .elem-page6:hover h1{
+        transform: translateY(-100%);
+        color: #c42660;
+      }
+      .elem-page6:hover img{
+        opacity: 1;
+        transform: translateY(0%) rotate(0deg);
+      
+      }
+      
+
+     #page6-headder{
+        width: 40vw;
+font-size: 5vw;
+color: rgb(248, 81, 81);
+top: 0% !important;
+margin-bottom: 1vh;
+font-weight: 500;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 2px solid red ;
+margin-left: 30vw;
+margin-top: 3vw;
+
+     }
+
+     #elem-page6-container{
+margin-top: 6vh;
+
+     }
+
+
+
+}
+     
