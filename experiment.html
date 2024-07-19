@@ -18,40 +18,41 @@
 <body>
 
 
+  <div class="page6">
+    <div class="elem-page6">
+        <img src="./images/image1x1.jpg"
+            alt="">
+        <div class="text-div">
+            <h1>Mobiles</h1>
+            <h1>Mobiles</h1>
+        </div>
+        <img src="./images/green robot.jpg"
+            alt="">
+    </div>
+    <div class="elem-page6">
+      <img src="./images/image1x1.jpg"
+          alt="">
+      <div class="text-div">
+          <h1>smartwatch</h1>
+          <h1>smartwatch</h1>
+      </div>
+      <img src="./images/green robot.jpg"
+          alt="">
+  </div>
+  <div class="elem-page6">
+    <img src="./images/image1x1.jpg"
+        alt="">
+    <div class="text-div">
+        <h1>earbuds</h1>
+        <h1>earbuds</h1>
+    </div>
+    <img src="./images/green robot.jpg"
+        alt="">
+</div>
 
 
-   <script>
-     
-    
-    
+</div>
 
-    
-      window.addEventListener("DOMContentLoaded", () => {
-       
-        ultraSliderAnimation();
-      });
-   
-    
-      const ultraSliderAnimation = () => {
-        const section = document.querySelector(".ultra-slider-section");
-        const container = document.querySelector(".ultra-slider-container");
-    
-        ScrollTrigger.create({
-          animation: gsap.to(".ultra-slider-container", {
-            x: () => -(container.scrollWidth - section.offsetWidth) + "px",
-            ease: "none",
-          }),
-          trigger: section,
-          start: "top top",
-          end: () => "+=" + (container.scrollWidth - section.offsetWidth),
-          scrub: 1,
-          pin: true,
-          anticipatePin: 1
-        });
-      };
-    
-    
-    </script>
 
 
 

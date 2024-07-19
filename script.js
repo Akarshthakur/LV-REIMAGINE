@@ -282,23 +282,7 @@ gsap.from(".image-container , #details-page2 , #price-section , #about-page2   "
   })
 
 
-  gsap.from(" .c ,.d ",{
-    y: 190,
-  
-  opacity: 0,
-  delay:0.3,
-  duration: 4,
-  scrollTrigger: {
-    trigger: "#page7",
-    scroller: "body",
-    stagger:0.15,
-    // markers:true,
-    start: "top 60%",
-    end: "top 30%",
-    scrub: 2,
-  
-  },
-  })
+
 
 
 
