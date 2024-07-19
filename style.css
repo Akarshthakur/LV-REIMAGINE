@@ -87,15 +87,6 @@ body {
 }
 
 
-#baa video {
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-    position: fixed;
-    overflow-y: hidden;
-    
-} 
 
 
     #page1{
@@ -209,21 +200,7 @@ body {
         font-size: small;
         color: rgb(248, 240, 240);
     }
-    .carousel .list .item .introduce .seeMore{
-        font-family: Poppins;
-        margin-top: 1.2em;
-        padding: 5px 0;
-        border: none;
-        border-bottom: 1px solid #f6f4f4;
-        background-color: transparent;
-        font-weight: bold;
-        letter-spacing: 3px;
-        transition: background 0.5s;
-        color: white;
-    }
-    .carousel .list .item .introduce .seeMore:hover{
-        background: #eee;
-    }
+
     .carousel .list .item:nth-child(1){
         transform: var(--item1-transform);
         filter: var(--item1-filter);
@@ -762,6 +739,8 @@ h4{
 
 /*page 3*/
 
+
+
 /*page 3 end*/
 #page4{
     height: 50vh;
@@ -805,6 +784,90 @@ h4{
         transform: translateX(-110%);
     }
 }
+
+
+
+/*  page 5   */
+#playPauseBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 1;
+    z-index: 2;
+    animation: scale-animation 2.4s infinite;
+}
+
+@keyframes scale-animation {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+
+
+#page5 {
+    height: max-content;
+    width: 100vw;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/Behold\ the\ Glory\ of\ Storm\ _\ Launching\ on\ 21.12.23\ \(360p\).mp4);
+}
+
+#baa {
+    position: relative;
+}
+
+#baa video {
+    height: 70vh;
+    width: 80vw;
+    object-fit: cover;
+    z-index: -1;
+    overflow-y: hidden;
+    border-radius: 4vw;
+}
+
+.orange {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid red;
+    border-radius: 4vw;
+}
+
+.line {
+    width: 100%;
+    max-width: 800px;
+    height: 8px;
+    margin: 0 0 10px 0;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(205, 26, 26);
+}
+
+.orangeWrapper {
+    padding: 0;
+    background-image: url(./images/gorilla.jpg);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 /*above-footer*/
 .above-footer{
@@ -1491,23 +1554,6 @@ margin: 1vw;
     color: #ED1556;
 }
 
-.content {
-    padding-top: 150px; /* Adjust based on navbar height */
-    text-align: center;
-}
-
-.fade-in {
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
 
 
 #container-cursor {
@@ -1675,4 +1721,181 @@ color: #f3ebeb;
     }
     }
         
+
+    /*page 10  */
+
+    
+    #page10{
+        justify-content: center;
+        height: auto;
+        width: auto;
+        background-color: rgb(0, 0, 0);
+        align-items: center;
+      
+     }
+  
+     
+  
+     .ultra-slider-section {
+       width: auto;
+       height: 100vh;
+       overflow: hidden;
+  
+       display: flex;
+       left: 0;
+       padding-left: 130px !important;
+   
+       box-sizing: border-box !important;
+      background-color: black;
+     }
+     
+     .ultra-slider-container {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    padding-right: 5vw;
+       width: auto;
+     
+     }
+     
+     .ultra-slider-card-container {
+       display: flex;
+       width: fit-content;
+       height: 90vh;
+       flex-direction: column;
+  padding-top:17vh;
+  
+  border: 1px solid black;
+       padding-left: 1vw;
+   
+    
+     }
+     .ultra-slider-card-col1 {
+       position: relative;
+       width: 29vw;
+       display: flex;
+     
+  
+   
+    
+     }
+     
+     .ultra-slider-img1 {
+       position: absolute;
+       width: 95%;
+       height: 40vh;
+       border-radius: 2vw;
+       z-index: -9;
+     }
+     
+   
+     
+     .ultra-slider-card-col2 {
+       width: 55%;
+       padding-left: 2vw;
+       padding-right: 2vw;
+       display: flex;
+       flex-direction: column;
+       z-index: 999;
+       color: white;
+  
+     }
+     
+     .ultra-slider-title {
+       text-transform: uppercase;
+       font-size: 4vw;
+       color: #F2F3F3;
+       padding-top: 47vh;
+
+     }
+  
+     .ultra-slider-card-col2 p{
+  
+      font-size: 1.6vw;
+  
+     }
+  
+     @media (max-width:466px){
+
+        #cursor{
+          display: none;
+        }
+ 
+       #page10{
+          justify-content: center;
+          height: auto;
+          width: auto;
+          background-color: #0B141A;
+          align-items: center;
+        
+       }
+    #page10{
+       padding-top: 10vh;
+    }
+       
+    
+       .ultra-slider-section {
+         width: 100%;
+         height: 90vh;
+         overflow: hidden;
+     
+        left: 0 !important;
+        padding-left: 0 !important;
+        
+ 
+         
+         
+         box-sizing: border-box !important;
+        background-color: #0B141A;
+       }
+       
+       .ultra-slider-container {
+         display: flex;
+       }
+       
+       .ultra-slider-card-container {
+         display: flex;
+         width: 90vw;
+        flex-direction: column;
+        align-items: center;
+ 
+       justify-content: center;
+       }
+       .ultra-slider-card-col1 {
+         position: relative;
+         width: 45%;
+       
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
+       
+       .ultra-slider-img1 {
+         position: absolute;
+         width: 70vw !important;
+         height: 70vw;
+         border-radius: 2vw;
+       }
+       
+     
+       
+       .ultra-slider-card-col2 {
+          width: 55%;
+       margin-top: 28vh;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: flex-start;
+       
+        
+       }
+       
+       .ultra-slider-title {
+         text-transform: uppercase;
+         font-size: 7.2vw;
+         color: #F2F3F3;
+       }
+      
+    }
+ 
     

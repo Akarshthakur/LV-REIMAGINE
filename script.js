@@ -373,3 +373,80 @@ gsap.from(".image-container , #details-page2 , #price-section , #about-page2   "
   backButton.onclick = function(){
       carousel.classList.remove('showDetail');
   }
+
+
+  // page5 animation 
+
+
+  
+const tlvideo = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".orangeWrapper",
+    scrub: true,
+    pin: true,
+    
+    start: "50% 50%",
+    end: "+=200%"
+  }
+})
+
+.from(".orange", {
+  scale: 0.5, 
+  ease: "none"
+})
+
+.from(".line-2", {
+  scaleX:0,
+  ease:"none",
+  transformOrigin:"left top"
+}, 0)
+
+
+const video = document.getElementById('myVideo');
+const playPauseBtn = document.getElementById('playPauseBtn');
+
+video.pause(); 
+
+playPauseBtn.addEventListener('click', () => {
+    if (video.paused) {
+        video.play();
+        playPauseBtn.textContent = 'Pause';
+        playPauseBtn.classList.remove('blink');
+    } else {
+        video.pause();
+        playPauseBtn.textContent = 'Play';
+        playPauseBtn.classList.add('blink');
+    }
+});
+
+
+// page10 animation 
+
+
+    
+    
+
+    
+window.addEventListener("DOMContentLoaded", () => {
+       
+  ultraSliderAnimation();
+});
+
+
+const ultraSliderAnimation = () => {
+  const section = document.querySelector(".ultra-slider-section");
+  const container = document.querySelector(".ultra-slider-container");
+
+  ScrollTrigger.create({
+    animation: gsap.to(".ultra-slider-container", {
+      x: () => -(container.scrollWidth - section.offsetWidth) + "px",
+      ease: "none",
+    }),
+    trigger: section,
+    start: "top top",
+    end: () => "+=" + (container.scrollWidth - section.offsetWidth),
+    scrub: 1,
+    pin: true,
+    anticipatePin: 1
+  });
+};

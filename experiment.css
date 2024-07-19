@@ -1,0 +1,87 @@
+    #page10{
+      justify-content: center;
+      height: auto;
+      width: auto;
+      background-color: rgb(0, 0, 0);
+      align-items: center;
+    
+   }
+
+   
+
+   .ultra-slider-section {
+     width: auto;
+     height: 100vh;
+     overflow: hidden;
+
+     display: flex;
+     left: 0;
+     padding-left: 15px !important;
+    
+     box-sizing: border-box !important;
+    background-color: black;
+   }
+   
+   .ultra-slider-container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  
+     width: auto;
+   
+   }
+   
+   .ultra-slider-card-container {
+     display: flex;
+     width: fit-content;
+     height: 90vh;
+     flex-direction: column;
+padding-top:17vh;
+
+border: 1px solid black;
+     padding-left: 1vw;
+ 
+  
+   }
+   .ultra-slider-card-col1 {
+     position: relative;
+     width: 29vw;
+     display: flex;
+   
+
+ 
+  
+   }
+   
+   .ultra-slider-img1 {
+     position: absolute;
+     width: 95%;
+     height: 40vh;
+     border-radius: 2vw;
+     z-index: -9;
+   }
+   
+ 
+   
+   .ultra-slider-card-col2 {
+     width: 55%;
+     padding-left: 2vw;
+     padding-right: 2vw;
+     display: flex;
+     flex-direction: column;
+     z-index: 999;
+     color: white;
+
+   }
+   
+   .ultra-slider-title {
+     text-transform: uppercase;
+     font-size: 4vw;
+     color: #F2F3F3;
+     padding-top: 50vh;
+   }
+
+   .ultra-slider-card-col2 p{
+
+    font-size: 1.6vw;
+   }
