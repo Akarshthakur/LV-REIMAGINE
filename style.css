@@ -1784,7 +1784,7 @@ font-size:4vh;
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    padding: 20px 60px;
+    padding: 20px 10px;
 
   }
 
@@ -1835,23 +1835,31 @@ color: #f3ebeb;
   margin-bottom: 20px;
 }
 
-@media screen and (max-width:960px) {
-.col-03{
-    flex: 100%;
-    max-width: 80%;
-}
-}
-    
-
-
-
-@media screen and (max-width:600px) {
-    .col-03{
-        flex: 100%;
-        max-width: 100%;
-    }
-    }
         
+
+
+        @media screen and (max-width:960px) {
+            .col-03{
+                flex: 100%;
+                max-width: 80%;
+            }
+            }
+                
+            
+            
+            
+            @media screen and (max-width:600px) {
+                .col-03{
+                    flex: 100%;
+                    max-width: 100%;
+                }
+                }
+                
+                @media screen and (min-width:961px) {
+                .row-03{
+                    flex-wrap: nowrap;
+                }
+                }
 
     /*page 10  */
 
