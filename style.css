@@ -930,6 +930,7 @@ body {
     height: 70vh;
     width: 80vw;
     object-fit: cover;
+    object-position: center;
     z-index: -1;
     overflow-y: hidden;
     border-radius: 4vw;
@@ -939,7 +940,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 5px solid red;
+    border-bottom: 3px solid transparent;
     border-radius: 4vw;
 }
 
@@ -955,7 +956,9 @@ body {
 
 .orangeWrapper {
     padding: 0;
-    background-image: url(./images/gorilla.jpg);
+    background-image: url(./images/blaze-pro-5g-processor\ akt.jpg);
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -1076,6 +1079,7 @@ ul{
     border: 0;
     outline: none;
     padding: 14px  20px;
+    margin-bottom: 1vh;
     border-radius: 26px;
     width: 300px;
     color: #ffffff;
@@ -1211,6 +1215,9 @@ ul{
 }
 /* footer ends */
 
+
+/* page7 starts */
+
 .container6 {
   position: relative;
   overflow: hidden;
@@ -1242,19 +1249,27 @@ ul{
 
 .container6 img {
   height: 90vh;
-
 }
+
 
 .c img {
   height: 85vh;
   width: 35vw;
-  border-right: 1px solid red;
-  border-bottom: 1px solid red;
+  border-bottom: 2px solid red;
+  border-radius: 0 0 30px 30px;
+  margin-bottom: -2vw;
 }
-
-.d_right {
+.d_left img{
+    border-radius:25px 0 0 25px ;
+}
+.d_right  {
   margin-left: -21px;
 }
+.d_right img{
+    border-radius: 0 25px 25px 0;
+}
+
+/* page7 ends */
 
 
 /* page 8 which is now using as page in the main website */
@@ -1852,6 +1867,8 @@ padding: 10px;
     height: 100px;
     width: 100px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .name-03{
