@@ -15,6 +15,40 @@ function updateCursor(e) {
 document.addEventListener("mousemove", updateCursor);
 
 
+// adding the loader screen 
+
+
+
+var w1 = gsap.timeline()
+
+w1.from("#loader h1 , #loader img" , {
+  x:90,
+  opacity:0,
+  duration:2,
+  stagger:0.3,
+    
+})
+
+w1.to("#loader",{
+  opacity:0,
+ 
+})
+
+w1.to("#loader",{
+  display:"none",
+ 
+})
+
+
+
+w1.from(" #stagger",{
+  y:30,
+  opacity:0,
+  duration:1,
+  stagger:0.1
+  
+})
+
 
 
 // Navbar Animation
@@ -48,41 +82,6 @@ gsap.from(".navbar", {
 
 
 
-
-// Page 1 Animation
-gsap.from(".page1 h1, .page1 h2", {
-    y: 10,
-    rotate: 10,
-    opacity: 0,
-    delay: 0.3,
-    duration: 0.7,
-    scrollTrigger: {
-        trigger: ".page1 h1",
-        start: "top 27%",
-        end: "top 0",
-        scrub: 3
-    }
-});
-
-gsap.to(".page1 video", {
-    width: "90%",
-    scrollTrigger: {
-        trigger: ".page1 h1",
-        start: "top 27%",
-        end: "top 0",
-        scrub: 3
-    }
-});
-
-gsap.to("#main", {
-    backgroundColor: "#fff",
-    scrollTrigger: {
-        trigger: ".page1 h1",
-        start: "top -115%",
-        end: "top -120%",
-        scrub: 3
-    }
-});
 
 // Page 2 Image Container Animation
 const imageContainer = document.querySelector(".image-container");
@@ -255,56 +254,6 @@ gsap.from(".image-container , #details-page2 , #price-section , #about-page2   "
 
 
 
-  document.addEventListener("mousemove" , function(dets){
-
-   
-  })
-  
-
-  let nextButton = document.getElementById('next');
-  let prevButton = document.getElementById('prev');
-  let carousel = document.querySelector('.carousel');
-  let listHTML = document.querySelector('.carousel .list');
-  let seeMoreButtons = document.querySelectorAll('.seeMore');
-  let backButton = document.getElementById('back');
-  
-  nextButton.onclick = function(){
-      showSlider('next');
-  }
-  prevButton.onclick = function(){
-      showSlider('prev');
-  }
-  let unAcceppClick;
-  const showSlider = (type) => {
-      nextButton.style.pointerEvents = 'none';
-      prevButton.style.pointerEvents = 'none';
-  
-      carousel.classList.remove('next', 'prev');
-      let items = document.querySelectorAll('.carousel .list .item');
-      if(type === 'next'){
-          listHTML.appendChild(items[0]);
-          carousel.classList.add('next');
-      }else{
-          listHTML.prepend(items[items.length - 1]);
-          carousel.classList.add('prev');
-      }
-      clearTimeout(unAcceppClick);
-      unAcceppClick = setTimeout(()=>{
-          nextButton.style.pointerEvents = 'auto';
-          prevButton.style.pointerEvents = 'auto';
-      }, 2000)
-  }
-  seeMoreButtons.forEach((button) => {
-      button.onclick = function(){
-          carousel.classList.remove('next', 'prev');
-          carousel.classList.add('showDetail');
-      }
-  });
-  backButton.onclick = function(){
-      carousel.classList.remove('showDetail');
-  }
-
-
   // page5 animation 
 
 
@@ -372,7 +321,7 @@ const ultraSliderAnimation = () => {
       x: () => -(container.scrollWidth - section.offsetWidth) + "px",
       ease: "none",
     }),
-    trigger: section,
+    trigger: section ,
     start: "top top",
     end: () => "+=" + (container.scrollWidth - section.offsetWidth),
     scrub: 1,
