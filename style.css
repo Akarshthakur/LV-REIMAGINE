@@ -978,7 +978,7 @@ body {
     }
 } */
 #page4{
-    height: 60vh;
+    height: 55vh;
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -986,7 +986,7 @@ body {
     background-color:black;
 }
 #container4{
-    height: 400px;
+    height: 50vh;
     width: 100vw;
     display: inline-block;
     padding: 5px;
@@ -1013,7 +1013,7 @@ body {
     position: relative;
     display: inline-block;
     height: 100%;
-    width: 295px;
+    width: 15vw;
     margin-right: 25px;
     border-radius: 40px;
     border: 2px solid black;
@@ -1052,6 +1052,7 @@ body {
 }
 .elem:hover .box-bottom{
     bottom: 0;
+   
 }
 
 /*  page 5   */
