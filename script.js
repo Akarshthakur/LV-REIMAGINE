@@ -15,6 +15,40 @@ function updateCursor(e) {
 document.addEventListener("mousemove", updateCursor);
 
 
+// adding the loader screen 
+
+
+
+var w1 = gsap.timeline()
+
+w1.from("#loader h1 , #loader img" , {
+  x:90,
+  opacity:0,
+  duration:2,
+  stagger:0.3,
+    
+})
+
+w1.to("#loader",{
+  opacity:0,
+ 
+})
+
+w1.to("#loader",{
+  display:"none",
+ 
+})
+
+
+
+w1.from(" #stagger",{
+  y:30,
+  opacity:0,
+  duration:1,
+  stagger:0.1
+  
+})
+
 
 
 // Navbar Animation
