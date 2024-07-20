@@ -1207,6 +1207,9 @@ transition: 0.2s ease;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  gap: 1vw;
+  
+
 
 }
 
@@ -1216,8 +1219,10 @@ transition: 0.2s ease;
 }
 
 .c img {
-  height: 80vh;
-  width: 28vw;
+  height: 85vh;
+  width: 35vw;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
 }
 
 .d_right {
