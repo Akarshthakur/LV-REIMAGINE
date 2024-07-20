@@ -978,7 +978,7 @@ body {
     }
 } */
 #page4{
-    height: 50vh;
+    height: 60vh;
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -1039,11 +1039,11 @@ body {
     
 }
 .box-bottom{
-    height: 30%;
+    height: 60%;
     width: 100%;
     background: linear-gradient(transparent, rgb(105, 36, 36));
     position: absolute;
-    bottom: -30%;
+    bottom: -60%;
     transition: all ease 0.3s;
     color: #fff;
     display: flex;
