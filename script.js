@@ -32,60 +32,6 @@ gsap.from(".navbar", {
     ease: "power2.out"
 });
 
-// Marquee Animation
-  
-let direction = 1;
-let duration = 2;
-
-let tl = gsap.timeline({});
-
-tl.to(".marquee > span", {
-    repeat: -1,
-    yoyo: false,
-    yPercent: -100,
-    ease: "linear",
-    duration: duration
-});
-
-let scroll = ScrollTrigger.create({
-    onUpdate(self) {
-        if (self.direction !== direction) {
-            direction *= 1;
-            gsap.to(tl, {timeScale: direction});
-        }
-        
-        tl.timeScale(duration * self.getVelocity() / 350);
-        gsap.to(tl, {timeScale: direction, overwrite: true});
-    }
-});
-
-
-
- 
-let directions = 1;
-let durations = 2;
-
-let tls = gsap.timeline({});
-
-tls.to(".marquee2 > span", {
-    repeat: +1,
-    yoyo: false,
-    yPercent: -100,
-    ease: "linear",
-    duration: duration
-});
-
-let scrolls = ScrollTrigger.create({
-    onUpdate(self) {
-        if (self.directions !== directions) {
-            directions *= -1;
-            gsap.to(tls, {timeScale: directions});
-        }
-        
-        tls.timeScale(duration * self.getVelocity() / 350);
-        gsap.to(tls, {timeScale: directions, overwrite: true});
-    }
-});
 
 
 
@@ -200,19 +146,7 @@ document.getElementById('back-page8').addEventListener('click', () => {
     });
 });
 
-document.getElementById('forward-page8l').addEventListener('click', () => {
-    document.getElementById('rignt-page8l').scrollBy({
-        left: 400,
-        behavior: 'smooth'
-    });
-});
 
-document.getElementById('back-page8l').addEventListener('click', () => {
-    document.getElementById('rignt-page8l').scrollBy({
-        left: -400,
-        behavior: 'smooth'
-    });
-});
 
 // Page 7 Scroll Trigger Animation
 let page7 = document.querySelector('#page7');
@@ -262,7 +196,7 @@ gsap.from(".image-container , #details-page2 , #price-section , #about-page2   "
   },
   })
   
-
+/*
   gsap.from(" .cardpg3  ",{
     y: 190,
   
@@ -282,23 +216,7 @@ gsap.from(".image-container , #details-page2 , #price-section , #about-page2   "
   })
 
 
-  gsap.from(" .c ,.d ",{
-    y: 190,
-  
-  opacity: 0,
-  delay:0.3,
-  duration: 4,
-  scrollTrigger: {
-    trigger: "#page7",
-    scroller: "body",
-    stagger:0.15,
-    // markers:true,
-    start: "top 60%",
-    end: "top 30%",
-    scrub: 2,
-  
-  },
-  })
+*/
 
 
 
