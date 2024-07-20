@@ -934,7 +934,7 @@ body {
     
      /* prefooter- responsive ends */
 
-     
+/*      
 #page4{
     height: 50vh;
     width: 100vw;
@@ -976,9 +976,83 @@ body {
     to{
         transform: translateX(-110%);
     }
+} */
+#page4{
+    height: 50vh;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    background-color:black;
+}
+#container4{
+    height: 400px;
+    width: 100vw;
+    display: inline-block;
+    padding: 5px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    animation-name: anime;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+} 
+
+.elem{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 295px;
+    margin-right: 25px;
+    border-radius: 40px;
+    border: 2px solid black;
+    overflow: hidden;
 }
 
+#container4::-webkit-scrollbar{
+    display: none;
+}
 
+.elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+.elem video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+.box-bottom{
+    height: 30%;
+    width: 100%;
+    background: linear-gradient(transparent, rgb(105, 36, 36));
+    position: absolute;
+    bottom: -30%;
+    transition: all ease 0.3s;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elem:hover .box-bottom{
+    bottom: 0;
+}
 
 /*  page 5   */
 #playPauseBtn {
