@@ -1547,7 +1547,7 @@ ul{
   position: relative;
   overflow: hidden;
   background-color: black;
-  background-image: url(./images/lavareimagingebd.jpeg);
+
   object-fit: contain;
   height: 100vh;
   width: 100vw;
@@ -1583,7 +1583,7 @@ ul{
 
 .c img {
   height: 85vh;
-  width: 35vw;
+  width: 65vw;
   border-bottom: 2px solid red;
   border-radius: 0 0 30px 30px;
   margin-bottom: -2vw;
