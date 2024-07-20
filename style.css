@@ -571,7 +571,7 @@ body {
 
 
 
-
+/* prefooter starts */
 
 .container-prefooter{
       max-width: 1500px;
@@ -680,19 +680,162 @@ body {
   .img1{
       padding: 0px 0px 20px 50px;
   }
-  @media(max-width: 767px){
-      .prefooter-colm{
-        width: 50%;
-        margin-bottom: 30px;
-    }
-    }
-    @media(max-width: 574px){
-      .prefooter-colm{
-        width:100%;
-      }
-    }
-
     
+        /* responsive starts */
+
+    .container-prefooter {
+        max-width: 1500px;
+        margin: auto;
+    }
+    
+    .row-prefooter {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .pre-footer {
+        height: auto;
+        width: 100%;
+        overflow-x: hidden;
+        background-color: #1d1c1c;
+        padding: 40px 0 0 1px;
+    }
+    
+    .pre-footer:hover {
+        border: 0.5px solid #fff;
+    }
+    
+    .prefooter-colm {
+        width: 20%;
+        padding: 0 15px;
+        margin-bottom: 20px;
+    }
+    
+    .prefooter-colm:hover {
+        border: 1.5px solid #302020;
+        border-radius: 15px;
+        transition: 1s;
+    }
+    
+    .prefooter-colm h4 {
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 5500;
+        font-family: Arial, sans-serif;
+        position: relative;
+        text-align: center;
+    }
+    
+    .prefooter-colm h4::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    
+    .prefooter-colm i {
+        padding: 0px 0px 20px 110px;
+        color: #a79e9e;
+        font-weight: 1600;
+        font-size: xx-large;
+    }
+    
+    .prefooter-colm i:hover {
+        font-weight: 1700;
+        font-size: 35px;
+        color: #ff0c0c;
+    }
+    
+    p {
+        padding-bottom: 60px;
+        color: #ffffff;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+    
+    .prefooter-colm a {
+        padding: 0px 0px 20px 100px;
+        color: #c1baba;
+        font-weight: bold;
+        color: #fff;
+    }
+    
+    .prefooter-colm a:hover {
+        font-size: 17px;
+    }
+    
+    .prefooter-colm h4:hover {
+        font-size: 17px;
+        text-decoration: underline;
+    }
+    
+    .prefooter-colm p:hover {
+        font-size: 17px;
+    }
+    
+    .img {
+        padding: 0px 0px 20px 100px;
+    }
+    
+    .img1 {
+        padding: 0px 0px 20px 50px;
+    }
+    
+    @media (max-width: 1200px) {
+        .prefooter-colm {
+            width: 25%;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .prefooter-colm {
+            width: 33.33%;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .prefooter-colm {
+            width: 50%;
+        }
+    
+        .prefooter-colm i {
+            padding-left: 0;
+            text-align: center;
+            display: block;
+        }
+    
+        .prefooter-colm a, .img, .img1 {
+            padding-left: 0;
+            text-align: center;
+            display: block;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .prefooter-colm {
+            width: 100%;
+        }
+    
+        .prefooter-colm i {
+            padding-left: 0;
+            text-align: center;
+            display: block;
+        }
+    
+        .prefooter-colm a, .img, .img1 {
+            padding-left: 0;
+            text-align: center;
+            display:block;
+        }
+    }
+    
+     /* prefooter- responsive ends */
+
 .back-to-top-footer{
     height: 30vh;
     width: 100%;
@@ -741,13 +884,6 @@ h4{
 .social-links{
     padding-left: 20px;
 }
-
-
-/*page 3*/
-
-
-
-/*page 3 end*/
 
 
 
