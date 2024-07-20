@@ -32,6 +32,19 @@ gsap.from(".navbar", {
     ease: "power2.out"
 });
 
+// nav bar hamburger animation 
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('#Hanm');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        hamburger.addEventListener('click', function() {
+            mobileMenu.classList.toggle('open');
+        });
+    });
+
+
 
 
 
@@ -145,7 +158,6 @@ document.getElementById('back-page8').addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-
 
 
 // Page 7 Scroll Trigger Animation
