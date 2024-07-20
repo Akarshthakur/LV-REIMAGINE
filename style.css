@@ -1052,49 +1052,9 @@ filter: contrast(120%) brightness(110%);
     
      /* prefooter- responsive ends */
 
-/*      
-#page4{
-    height: 50vh;
-    width: 100vw;
-    white-space: nowrap;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: relative;
-    background-color:black;
-}
-#container4{
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    margin-left: 1vw;
-    padding: 2.5vw;
-    padding-left: 1vw;
-    padding-bottom: 4vh;
-    animation-name: anime;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
 
-#page4 img{
-    height: 100%;
-    width: 15vw;
-    margin: 1vw 2.5vw;
-    border-radius: 25px;
-    object-fit: cover;
-    object-position: top;
-    padding-bottom: 4vh;
+/* page4 starts */
 
-}
-
-@keyframes anime {
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(-110%);
-    }
-} */
 #page4{
     height: 55vh;
     white-space: nowrap;
@@ -1104,7 +1064,7 @@ filter: contrast(120%) brightness(110%);
     background-color:black;
 }
 #container4{
-    height: 50vh;
+    height: 45vh;
     width: 100vw;
     display: inline-block;
     padding: 5px;
@@ -1117,6 +1077,9 @@ filter: contrast(120%) brightness(110%);
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 
+}
+#container4::-webkit-scrollbar{
+    display: none;
 }
 @keyframes anime {
     from{
@@ -1132,16 +1095,11 @@ filter: contrast(120%) brightness(110%);
     display: inline-block;
     height: 100%;
     width: 15vw;
-    margin-right: 25px;
+    margin-right: 1.5vw;
     border-radius: 40px;
     border: 2px solid black;
     overflow: hidden;
 }
-
-#container4::-webkit-scrollbar{
-    display: none;
-}
-
 .elem img {
     height: 100%;
     width: 100%;
@@ -1171,6 +1129,80 @@ filter: contrast(120%) brightness(110%);
 .elem:hover .box-bottom{
     bottom: 0;
 }
+/* page4 responsive */
+@media (max-width:1900px) {
+    #page4{
+        height: 50vh;
+    }
+    #container4{
+        height: 45vh;
+        width: 200vw;
+        animation-duration: 20s;
+        
+    
+    }
+    
+    .elem{
+        width: 31.5vw;
+        margin-top: 2vw;
+        margin-right: 2vw;
+        border-radius: 30px;
+       
+    }
+
+}
+@media (max-width:1190px) {
+    #page4{
+        height: 40vh;
+    }
+    #container4{
+        height: 35vh;
+        width: 200vw;
+        animation-duration: 10s;
+    
+    }
+
+    .elem{
+        width: 31vw;
+        margin-right: 2.5vw;
+        border-radius: 20px;
+    }
+}
+@media (max-width:870px) {
+    #page4{
+        height: 30vh;
+    }
+    #container4{
+        height: 25vh;
+        width: 200vw;
+        animation-duration: 7s;
+    
+    }
+    
+    .elem{
+        width: 29.5vw;
+        margin-right: 3vw;
+        border-radius: 20px;
+    }
+}
+@media (max-width:530px) {
+    #page4{
+        height: 25vh;
+    }
+    #container4{
+        height: 20vh;
+        width: 200vw;
+        animation-duration: 5s;
+    }
+    
+    .elem{
+        width: 29.3vw;
+        margin-right: 2.5vw;
+        border-radius: 10px;
+    }
+}
+
+/* page4 responsive ends */
 
 /*  page 5   */
 #playPauseBtn {
