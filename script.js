@@ -380,3 +380,4 @@ const ultraSliderAnimation = () => {
     anticipatePin: 1
   });
 };
+
