@@ -99,6 +99,11 @@ filter: contrast(120%) brightness(110%);
   
     }
 
+
+/*page-01*/
+
+
+
 .page01-body{
     margin: 0;
           background-color: black;
@@ -135,7 +140,7 @@ filter: contrast(120%) brightness(110%);
 /* carousel */
 .carouselpg01{
     position: relative;
-    height: 700px;
+    height: 600px;
     overflow: hidden;
     margin-top: -5px;
 }
