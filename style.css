@@ -1031,7 +1031,7 @@ body {
     }
 } */
 #page4{
-    height: 50vh;
+    height: 55vh;
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -1039,7 +1039,7 @@ body {
     background-color:black;
 }
 #container4{
-    height: 400px;
+    height: 50vh;
     width: 100vw;
     display: inline-block;
     padding: 5px;
@@ -1066,7 +1066,7 @@ body {
     position: relative;
     display: inline-block;
     height: 100%;
-    width: 295px;
+    width: 15vw;
     margin-right: 25px;
     border-radius: 40px;
     border: 2px solid black;
@@ -1092,11 +1092,11 @@ body {
     
 }
 .box-bottom{
-    height: 30%;
+    height: 60%;
     width: 100%;
     background: linear-gradient(transparent, rgb(105, 36, 36));
     position: absolute;
-    bottom: -30%;
+    bottom: -60%;
     transition: all ease 0.3s;
     color: #fff;
     display: flex;
@@ -1105,6 +1105,7 @@ body {
 }
 .elem:hover .box-bottom{
     bottom: 0;
+   
 }
 
 /*  page 5   */
