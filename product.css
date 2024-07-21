@@ -4,7 +4,7 @@ body{
     font-family: Poppins;
     margin: 0;
     font-size: 16px;
-    background-color: #2b5f39;
+    background-color: #000000;
 }
 *{
     box-sizing: border-box;
@@ -136,7 +136,7 @@ header nav{
     margin: 20px 0;
 }
 .carousel .list .item .main-content .content .addToCard{
-    background-color: #4f8b69;
+    background-color: #000000;
     color: #fff;
     padding: 10px  30px;
     font-family: Poppins;
