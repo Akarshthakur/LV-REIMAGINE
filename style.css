@@ -693,13 +693,15 @@ filter: contrast(120%) brightness(110%);
             pointer-events: none;
         }
 
-        @media (max-width:1023px){
+        @media (max-width:468px){
             #page2{
                 height:100vmax;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 overflow: hidden;
+                background-color: black;
+        
                
             }
             #container-page2{
@@ -712,84 +714,97 @@ filter: contrast(120%) brightness(110%);
             }
         
             .left-page2{
-                max-height:50vh;
-                width: 100%;
-                padding-top: 100px;
+                max-height:fit-content;
+                width: 100vw;
+                padding-top: 10px;
+            
             }
         
             .image-container {
-                width: 100%;
+                width: 80vw;
                 /* max-width: 500px; */
-                max-height: 50vh;
+             
                 height: fit-content;
+            
                
                
             }
             .image-container img {
                 width: 100%;
-                top: 10vh !important;
-                height: 45vh;
+         
+                height: 40vh;
                 object-fit:contain;
                 justify-content: center;
                 
             }
         
             #right-page2{    
-                height: 60vh !important;
+                height: 50vh !important;
                 width: 100vw;
                 display: flex;
                 justify-content: flex-start;
                 flex-direction: column;
+              
+                margin-bottom: 2vh;
+             
+
                 
             }
         
             #details-page2{
-                margin-top: 2vh;
+                margin-top: 1vh;
                 padding-top: 2px;
-                line-height: 10px;
+                line-height: 2px;
+                width: 100vw;
+                padding: 5vw 10vw;
             }
             #details-page2 h1 {
-                font-size: 1.8vw;
-                line-height: 18px;
+                font-size: 4.2vw;
+                line-height: 6vw;
             }
+
+              #price-section{
+                width: 90vw;
+              }
         
             #price-section h1{
-                font-size: 1rem;
+                font-size: 1.2rem;
+                line-height: 5vw;
+                text-transform: uppercase;
             }
         
             #btn-ripple {
                 height: 50px;
                 width: 200px;
-                margin-left: 2vw;
-                font-size: 1.3vw;
+                font-size: 5vw;
+             
+            
                
             }
-            #btn-ripplea {
-                height: 50px;
-                width: 200px;
-                margin-left: 2vw;
-                font-size: 1.3vw;
-            }
-        
-        }
-        
-        @media (max-width:500px){
-            #btn-ripple {
-                height: 40px;
-                width: 150px;
-                margin-left: 2vw;
-                font-size: 1.3vw;
-               
-            }
-            #btn-ripplea {
-                height: 40px;
-                width: 150px;
-                margin-left: 2vw;
-                font-size: 1.3vw;
-            }
-        
-        }
+                 #about-page2{
+              display: flex;
+                  align-items: center;
+             justify-content: center;
+               flex-direction: column;
+               gap: 1vh;
+               padding-bottom: 5vh;
+               margin-top: 3vh;
+           
 
+                 }
+
+               
+
+            #btn-ripplea {
+                height: 50px;
+                width: 200px;
+                margin-left: 2vw;
+                font-size: 5vw;
+            }
+        
+        }
+        
+       
 
 
 /* prefooter starts */

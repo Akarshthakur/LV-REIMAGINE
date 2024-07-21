@@ -189,7 +189,7 @@ tl3.to(dogL, {
 
 // adding gsap to all the remaing page 
 
-
+/*
 gsap.from(".image-container , #details-page2 , #price-section , #about-page2   ",{
     y: 190,
   opacity: 0,
@@ -225,6 +225,8 @@ gsap.from(".image-container , #details-page2 , #price-section , #about-page2   "
   
   },
   })
+
+
 
 
 */
