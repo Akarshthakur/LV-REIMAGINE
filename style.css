@@ -106,7 +106,7 @@ filter: contrast(120%) brightness(110%);
 
 .page01-body{
     margin: 0;
-          background-color: rgb(12, 12, 12);
+          background-color: black;
     font-family: Poppins;
     padding-top: 10vh;
 }
@@ -140,7 +140,7 @@ filter: contrast(120%) brightness(110%);
 /* carousel */
 .carouselpg01{
     position: relative;
-    height: 600px;
+    height: 90vh;
     overflow: hidden;
     margin-top: -5px;
 }
@@ -200,19 +200,19 @@ filter: contrast(120%) brightness(110%);
     
 }
 .carouselpg01 .listpg01 .itempg01 .introducepg01 .titlepg01{
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: 700;
-    line-height: 2em;
+    line-height: 1em;
 }
 .carouselpg01 .listpg01 .itempg01 .introducepg01 .topicpg01{
-    font-size: 4em;
+    font-size: 2em;
     font-weight: 600;
     line-height: 1em;
 }
 .carouselpg01 .listpg01 .itempg01 .introducepg01 .despg01{
     font-size:medium;
     color:white;
-    line-height: 2.5vh;
+    line-height: 2.1vh;
     font-weight: 500;
 }
 .carousepg01l .listpg01 .itempg01 .introducepg01 .seeMorepg01{
@@ -502,15 +502,16 @@ filter: contrast(120%) brightness(110%);
 @media screen and (max-width: 767px){
     /* mobile */
     .carouselpg01{
-        height: 600px;
+        height: 60vh;
     }
     .carouselpg01 .listpg01 .itempg01{
         width: 100%;
-        font-size: 10px;
+        font-size: 9px;
     }
     
     .carouselpg01 .listpg01{
         height: 100%;
+      
     }
     .carouselpg01 .listpg01 .itempg01:nth-child(2) .introducepg01{
         width: 50%;
@@ -1013,7 +1014,7 @@ filter: contrast(120%) brightness(110%);
     .prefooter-colm i:hover {
         font-weight: 1700;
         font-size: 35px;
-        color: #ff0c0c;
+        color: #BB135C;
     }
     
     p {
@@ -1394,7 +1395,7 @@ background-color: black;
 .row-main-bottom{
 	display: flex;
 	flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
    
 }
 ul{
@@ -1420,7 +1421,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #d20c0c;
+	background-color: #BB135C;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -1466,11 +1467,19 @@ ul{
     width: 50%;
     margin-bottom: 30px;
 }
+.row-main-bottom{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
 }
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
 }
+
 }
 .footer-col p{
     color: #777777;
