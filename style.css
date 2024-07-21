@@ -99,6 +99,11 @@ filter: contrast(120%) brightness(110%);
   
     }
 
+
+/*page-01*/
+
+
+
 .page01-body{
     margin: 0;
           background-color: black;
@@ -135,7 +140,7 @@ filter: contrast(120%) brightness(110%);
 /* carousel */
 .carouselpg01{
     position: relative;
-    height: 700px;
+    height: 600px;
     overflow: hidden;
     margin-top: -5px;
 }
@@ -1278,7 +1283,6 @@ background-color: black;
 
 .orangeWrapper {
     padding: 0;
-    background-image: url(./images/page5backimg.jpeg);
     background-size: cover;
     background-position: center;
     height: 100vh;
