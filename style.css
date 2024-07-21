@@ -1269,17 +1269,10 @@ background-color: black;
     justify-content: center;
     border-bottom: 3px solid transparent;
     border-radius: 1vw;
+    padding-right: 6vw;
 }
 
-.line {
-    width: 100%;
-    max-width: 800px;
-    height: 8px;
-    margin: 0 0 10px 0;
-    position: relative;
-    display: inline-block;
-    background-color: rgb(205, 26, 26);
-}
+
 
 .orangeWrapper {
     padding: 0;
@@ -1291,6 +1284,59 @@ background-color: black;
     align-items: center;
     justify-content: center;
 }
+
+
+@media (max-width:482px) {
+    #page5 {
+        height:fit-content;
+        width: 100vw;
+    background-color: black;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    
+    #baa {
+        position: relative;
+    }
+    
+    #baa video {
+        height: 40vh;
+        width: 90vw;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
+        overflow-y: hidden;
+        border-radius: 2vw;
+        padding-left: 2vw;
+    }
+    
+    .orange {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     border: 20x solid red;
+        border-radius: 1vw;
+    }
+    
+    
+    
+    .orangeWrapper {
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        width: 100vw;
+        display: flex;
+      
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+}
+
 
 /* footer starts */
 
@@ -2314,7 +2360,7 @@ color: #f3ebeb;
   
        display: flex;
        left: 0;
-       padding-left: 130px !important;
+       padding-left: 150px !important;
    
        box-sizing: border-box !important;
       background-color: black;
