@@ -1084,7 +1084,7 @@ filter: contrast(120%) brightness(110%);
     background-color:black;
 }
 #container4{
-    height: 45vh;
+    height: 40vh;
     width: 100vw;
     display: inline-block;
     padding: 5px;
@@ -1150,12 +1150,12 @@ filter: contrast(120%) brightness(110%);
     bottom: 0;
 }
 /* page4 responsive */
-@media (max-width:1900px) {
+@media (max-width:1650px) {
     #page4{
         height: 50vh;
     }
     #container4{
-        height: 45vh;
+        height: 48vh;
         width: 200vw;
         animation-duration: 20s;
         
@@ -1173,12 +1173,12 @@ filter: contrast(120%) brightness(110%);
 }
 @media (max-width:1190px) {
     #page4{
-        height: 40vh;
+        height: 55vh;
     }
     #container4{
-        height: 35vh;
+        height: 52vh;
         width: 200vw;
-        animation-duration: 10s;
+        animation-duration: 15s;
     
     }
 
@@ -1190,12 +1190,12 @@ filter: contrast(120%) brightness(110%);
 }
 @media (max-width:870px) {
     #page4{
-        height: 30vh;
+        height: 45vh;
     }
     #container4{
-        height: 25vh;
+        height: 42vh;
         width: 200vw;
-        animation-duration: 7s;
+        animation-duration: 15s;
     
     }
     
@@ -1212,7 +1212,7 @@ filter: contrast(120%) brightness(110%);
     #container4{
         height: 20vh;
         width: 200vw;
-        animation-duration: 5s;
+        animation-duration: 15;
     }
     
     .elem{
@@ -1696,9 +1696,6 @@ ul{
   
 }
 
-
-
-
 #left-navigation {
     height: 30vh;
     width: 5vw;
@@ -1739,8 +1736,10 @@ margin: 1vw;
 }
 
 #back-page8 {
-    border: 2px solid white;
-    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
     padding: 2vw;
    font-size: 2vw;
    font-weight: 900;
@@ -1750,27 +1749,44 @@ margin: 1vw;
 
 
 #back-page8:hover {
-    scale: 0.7;
-    background-color: #25D366;
+    scale: 1.1;
+    background-color: #f63e4e ;
     transition: 0.5s;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #forward-page8:hover {
-    scale: 0.7;
-    background-color: #25D366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 1.1;
+    background-color: #f63e4e;
     transition: 0.5s;
     cursor: pointer;
 }
 
 #forward-page8 {
-    border: 2px solid rgb(214, 42, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 100%;
     padding: 2vw;
     font-size: 2vw;
     font-weight: 900;
-    color: wheat;
+    color: white;
     cursor: pointer;
+}
+
+#forward-page8 i{
+    font-size: 3vw;
+    font-weight: 600;
+}
+#back-page8 i{
+    font-size: 3vw;
+    font-weight: 600;
 }
 #first-caed8{
 
