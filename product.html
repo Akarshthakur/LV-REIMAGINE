@@ -21,16 +21,18 @@
     <main>
 
 
-
         <div class="navbar-container">
             <header id="navbar" class="navbar">
                 <nav class="nav-content">
                     <div class="nav-left">
-                        <a href="#" class="logo">Logo</a>
+                       
+                        <a href="./index.html" class="logo"><img src="./images/bhumi_logo_lava-removebg-preview (1) bhutcgbjhvvbhjv.png" alt=""></a>
                         <a href="./product.html" class="nav-link">Product</a>
-                        <a href="#lavacare" class="nav-link">LavaCare</a>
-                        <a href="#store" class="nav-link">Store</a>
-                        <a href="#about" class="nav-link">About</a>
+                       
+                        <a id="features" href="#page10" class="nav-link">Features</a>
+                        
+                        <a href="#about-footer" class="nav-link">About</a>
+                        <a href="#page3" class="nav-link">Review</a>
                     </div>
                     <div class="nav-right">
                         <input type="text" placeholder="Search" class="search-bar">
@@ -41,7 +43,7 @@
                     </div>
                     <div class="hamburger">
                         <i  id="Hanm" class="fas fa-bars"></i>
-                        <a href="#" class="logo">Lava</a>
+                        <a href="./index.html" class="logo"><img src="./images/bhumi_logo_lava-removebg-preview (1) bhutcgbjhvvbhjv.png" alt=""></a>
                         <div>
                             <a href="./account.html" class="nav-icon"><i class="fas fa-user"></i></a>
                             <a href="./cart.html" class="nav-icon"><i class="fas fa-shopping-cart"></i></a>
@@ -52,15 +54,180 @@
             <div class="mobile-menu">
                 
                 <a href="./product.html" class="nav-link">Product</a>
-                <a href="#lavacare" class="nav-link">LavaCare</a>
-                <a href="#store" class="nav-link">Store</a>
+                <a href="#lavacare" class="nav-link">Features</a>
+               
                 <a href="#about" class="nav-link">About</a>
                 <input type="text" placeholder="Search" class="search-bar">
                
             </div>
         </div>
+        <script>
+            document.getElementById('features').addEventListener('click', function() {
+                window.location.href = 'index.html#page10';
+            });
+        </script>
 
-        
+
+
+
+       <style>
+
+         
+/* page end */
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    padding: 10px 0;
+}
+
+.navbar {
+    width: 80%; /* Reduced width */
+    background-color: black;
+    transition: background-color 0.8s, box-shadow 0.5s;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px; /* Rounded corners */
+    z-index: 999;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    gap: 10px;
+}
+.nav-left .logo img{
+    height: 3vh;
+    width: 4vw;
+    display: flex;
+ 
+}
+.nav-right {
+    gap: 15px;
+}
+
+.logo {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    overflow: hidden !important;
+}
+
+.navbar.scrolled {
+    background-color: #BB135C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: #ED1556;
+}
+
+.search-bar {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.nav-icon {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    margin: 0 10px;
+}
+
+.nav-icon:hover {
+    color: #ED1556;
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 998;
+}
+
+.mobile-menu.open {
+    display: flex;
+}
+
+.mobile-menu a {
+    color: white;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .nav-left,
+    .nav-right {
+        display: none;
+    }
+
+
+
+    .hamburger {
+        width: 100%;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .hamburger .logo img{
+        height: 7vh;
+        width: 27vw;
+        display: flex;
+        padding-left: 4vw;
+    }
+
+    .navbar {
+        width: 90%;
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+       </style>
+
+
         <section class="carousel next">
             <div class="list">
                 <article class="item other_1">
