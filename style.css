@@ -1240,8 +1240,6 @@ filter: contrast(120%) brightness(110%);
 background-color: black;
     align-items: center;
     justify-content: center;
-    background-image: url(./images/Behold\ the\ Glory\ of\ Storm\ _\ Launching\ on\ 21.12.23\ \(360p\).mp4);
-  object-fit: contain;
 
 }
 
@@ -1251,13 +1249,13 @@ background-color: black;
 }
 
 #baa video {
-    height: 70vh;
-    width: 80vw;
+    height: 80vh;
+    width: 70vw;
     object-fit: cover;
     object-position: center;
     z-index: -1;
     overflow-y: hidden;
-    border-radius: 4vw;
+    border-radius: 2vw;
 }
 
 .orange {
@@ -1265,7 +1263,7 @@ background-color: black;
     align-items: center;
     justify-content: center;
     border-bottom: 3px solid transparent;
-    border-radius: 4vw;
+    border-radius: 1vw;
 }
 
 .line {
@@ -1280,7 +1278,7 @@ background-color: black;
 
 .orangeWrapper {
     padding: 0;
-    background-image: url(./images/blaze-pro-5g-processor\ akt.jpg);
+    background-image: url(./images/page5backimg.jpeg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -1596,6 +1594,7 @@ ul{
 }
 .d_right img{
     border-radius: 0 25px 25px 0;
+
 }
 
 /* page7 ends */
@@ -2037,7 +2036,8 @@ background-color: transparent;
 }
 
 .nav-link:hover {
-    color: #ED1556;
+    color:white;
+    border-bottom: 1px solid white;
 }
 
 .search-bar {
