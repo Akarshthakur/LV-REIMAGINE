@@ -809,13 +809,13 @@ filter: contrast(120%) brightness(110%);
     height: auto;
     width: 100%;
       overflow-x: hidden;
-      background-color:#1d1c1c;
+      background-color:#131313;
       padding: 40px 0 0 1px;
       
      
   }
   .pre-footer:hover{
-    border:3.5px solid #fff;
+    border:3.5px solid #1c1c1c;
  }
   .prefooter-colm{
       width: 20%;
@@ -918,12 +918,12 @@ filter: contrast(120%) brightness(110%);
         height: auto;
         width: 100%;
         overflow-x: hidden;
-        background-color: #1d1c1c;
+        background-color: #131313;
         padding: 40px 0 0 1px;
     }
     
     .pre-footer:hover {
-        border: 0.5px solid #fff;
+        border: 0.5px solid #1c1c1c;
     }
     
     .prefooter-colm {
@@ -1245,6 +1245,8 @@ filter: contrast(120%) brightness(110%);
 background-color: black;
     align-items: center;
     justify-content: center;
+    background-image: url(./images/Behold\ the\ Glory\ of\ Storm\ _\ Launching\ on\ 21.12.23\ \(360p\).mp4);
+  object-fit: contain;
 
 }
 
@@ -1254,13 +1256,13 @@ background-color: black;
 }
 
 #baa video {
-    height: 80vh;
-    width: 70vw;
+    height: 70vh;
+    width: 80vw;
     object-fit: cover;
     object-position: center;
     z-index: -1;
     overflow-y: hidden;
-    border-radius: 2vw;
+    border-radius: 4vw;
 }
 
 .orange {
@@ -1269,17 +1271,10 @@ background-color: black;
     justify-content: center;
     border-bottom: 3px solid transparent;
     border-radius: 1vw;
+    padding-right: 6vw;
 }
 
-.line {
-    width: 100%;
-    max-width: 800px;
-    height: 8px;
-    margin: 0 0 10px 0;
-    position: relative;
-    display: inline-block;
-    background-color: rgb(205, 26, 26);
-}
+
 
 .orangeWrapper {
     padding: 0;
@@ -1325,7 +1320,6 @@ background-color: black;
         justify-content: center;
      border: 20x solid red;
         border-radius: 1vw;
-        padding-right: 6vw;
     }
     
     
@@ -1345,6 +1339,7 @@ background-color: black;
 
 }
 
+
 /* footer starts */
 
 
@@ -1362,14 +1357,14 @@ ul{
 	list-style: none;
 }
 .footermainbottom{
-	background-color: #191a1a;
+	background-color: black;
     padding: 70px 0;
 }
 .footer-col{
    padding: 0 15px;
 }
 .footer-col h4{
-	font-size: 15px;
+	font-size: 22px;
 	color: #ffffff;
 	text-transform: capitalize;
 	margin-bottom: 35px;
@@ -1390,11 +1385,11 @@ ul{
 	margin-bottom: 10px;
 }
 .footer-col ul li a{
-	font-size: 12px;
+	font-size: 15px;
 	text-transform: capitalize;
 	color: #ffffff;
 	text-decoration: none;
-	font-weight: 300;
+	font-weight: 500;
 	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
@@ -1651,7 +1646,6 @@ ul{
 }
 .d_right img{
     border-radius: 0 25px 25px 0;
-
 }
 
 /* page7 ends */
@@ -2093,8 +2087,7 @@ background-color: transparent;
 }
 
 .nav-link:hover {
-    color:white;
-    border-bottom: 1px solid white;
+    color: #ED1556;
 }
 
 .search-bar {
