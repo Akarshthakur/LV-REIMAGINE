@@ -24,7 +24,7 @@ var w1 = gsap.timeline()
 w1.from("#loader h1 , #loader img" , {
   x:90,
   opacity:0,
-  duration:2,
+  duration:3.5,
   stagger:0.3,
     
 })
@@ -331,4 +331,13 @@ const ultraSliderAnimation = () => {
     anticipatePin: 1
   });
 };
+
+// back to top 
+
+document.querySelector('.back-to-top-footer').addEventListener('click', function() {
+  window.location.href = '#page1';
+});
+
+
+
 

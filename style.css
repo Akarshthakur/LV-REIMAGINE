@@ -16,6 +16,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+  
 }
 #main{
     height:auto;
@@ -30,8 +31,8 @@ body {
 
 
 #loader{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     position: fixed;
     top: 0;
     background-color: black;
@@ -39,20 +40,25 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    gap: 3vw;
+   flex-direction: column;
+    
     overflow-x: hidden;
     
  }
 
 
-
- #loader img {
-height: 20vh;
-width: 40vw;
-
-filter: contrast(120%) brightness(110%);
-
+ #loader h1 {
+    font-size: 2vw;
+    font-weight: 300;
+    color:#f7b3c7;
+padding-bottom: 25vh;
  }
+
+
+
+ 
+ 
+ 
 
  @media screen and (max-width: 568px) {
  
@@ -61,7 +67,7 @@ filter: contrast(120%) brightness(110%);
        width: 100%;
        position: fixed;
        top: 0;
-       background-color: #111B21;
+       background-color: black;
        z-index: 999;
        align-items: center;
        justify-content: center;
@@ -70,23 +76,16 @@ filter: contrast(120%) brightness(110%);
        overflow-x: hidden;
        
     }
-    #loader h1 {
-       font-size: 11vw;
-       font-weight: 600;
-       color: #49D87C;
-       border-left: #24D366 dotted;
-       border-right: #24D366 dotted;
-       border-radius: 20%;
-       padding-left: 1vw;
-       padding-right: 1vw;
-    }
- 
-    #loader img{
-       height: 12vw;
-       width: 12vw;
-       font-weight: 1000;
-    }
- 
+  
+ #loader h1 {
+    font-size: 8vw;
+    font-weight: 300;
+    color:#f7b3c7;
+    padding-bottom: 5vh;
+
+
+ }
+  
  }
 
 
@@ -432,14 +431,16 @@ filter: contrast(120%) brightness(110%);
 }
 #prevpg01,
 #nextpg01{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     font-family: monospace;
     border: 1px solid #5555;
-    font-size: large;
+    font-size: 4vh;
     bottom: 20%;
     left: 10%;
+    align-items: center;
+    justify-content: center;
 }
 #nextpg01{
     left: unset;
@@ -1685,7 +1686,7 @@ ul{
 
 
 .c img {
-  height: 85vh;
+  height: 42vw;
   width: 65vw;
   border-bottom: 2px solid red;
   border-radius: 0 0 30px 30px;
@@ -1716,8 +1717,10 @@ ul{
         object-fit: contain;
         height: 100vh;
         width: 100vw;
-      
-      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+ 
       
       }
       .c,
@@ -1741,26 +1744,26 @@ ul{
       
       }
       
-      .container6 img {
-        height: 90vh;
-      }
-      
+
       
       .c img {
-        height: 85vh;
-        width: 65vw;
+        height: 45vh;
+        width: 85vw;
         border-bottom: 2px solid red;
         border-radius: 0 0 30px 30px;
         margin-bottom: -2vw;
       }
       .d_left img{
           border-radius:25px 0 0 25px ;
+          height: 55vh;
       }
       .d_right  {
         margin-left: -21px;
+      
       }
       .d_right img{
           border-radius: 0 25px 25px 0;
+          height: 55vh;
       }
       
 }
@@ -2173,7 +2176,6 @@ background-color: transparent;
 }
 
 /* page end */
-
 .navbar-container {
     width: 100%;
     display: flex;
@@ -2212,9 +2214,10 @@ background-color: transparent;
     gap: 10px;
 }
 .nav-left .logo img{
-    height: 6vh;
+    height: 3vh;
     width: 4vw;
     display: flex;
+ 
 }
 .nav-right {
     gap: 15px;
@@ -2713,8 +2716,8 @@ color: #f3ebeb;
         opacity: 0;
         transition: all ease-out 0.5s;
         transform: translateY(10%) rotate(2deg);
-        height: 65vh;
-        width: 55vh;
+        height: 38vw;
+        width: 28vw;
         padding: 5vw;
       
       }
@@ -2726,7 +2729,7 @@ color: #f3ebeb;
         right: 5%;
       }
       .text-div{
-        height: 16vh;
+        height: 8vw;
         position: relative;
         z-index: 9;
         overflow: hidden;
@@ -2818,7 +2821,7 @@ margin-top: 12vh;
      
       }
       .text-div{
-        height: 5vh;
+        height: 5.3vh;
         position: relative;
         z-index: 9;
         overflow: hidden;
@@ -2865,4 +2868,6 @@ margin-top: 6vh;
 
 
 }
+     
+
      
