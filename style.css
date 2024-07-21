@@ -106,7 +106,7 @@ filter: contrast(120%) brightness(110%);
 
 .page01-body{
     margin: 0;
-          background-color: black;
+          background-color: rgb(12, 12, 12);
     font-family: Poppins;
     padding-top: 10vh;
 }
@@ -168,10 +168,10 @@ filter: contrast(120%) brightness(110%);
     transform: translateX(0);
 }
 .carouselpg01 .listpg01 .itempg01 img{
-    width: 50%;
+    width: 45%;
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
     transition: right 1.5s;
 }
@@ -522,7 +522,7 @@ filter: contrast(120%) brightness(110%);
     }
 }
 
-
+/*PAGE-01 END*/
 
 
 
