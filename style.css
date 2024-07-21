@@ -809,13 +809,13 @@ filter: contrast(120%) brightness(110%);
     height: auto;
     width: 100%;
       overflow-x: hidden;
-      background-color:#1d1c1c;
+      background-color:#131313;
       padding: 40px 0 0 1px;
       
      
   }
   .pre-footer:hover{
-    border:3.5px solid #fff;
+    border:3.5px solid #1c1c1c;
  }
   .prefooter-colm{
       width: 20%;
@@ -918,12 +918,12 @@ filter: contrast(120%) brightness(110%);
         height: auto;
         width: 100%;
         overflow-x: hidden;
-        background-color: #1d1c1c;
+        background-color: #131313;
         padding: 40px 0 0 1px;
     }
     
     .pre-footer:hover {
-        border: 0.5px solid #fff;
+        border: 0.5px solid #1c1c1c;
     }
     
     .prefooter-colm {
