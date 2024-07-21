@@ -5,17 +5,54 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+
+
+        <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+
             
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-
+<link rel="stylesheet" href="style.css">
     </head>
     <body>
 
 
+<a id="backtomain" href="./index.html">
+      <i class="ri-arrow-left-line"></i>
+    </a>
+<style>
+
+  #backtomain {
+    font-size: 3vw;
+    color: white;
+    margin-left: 4vw;
+    margin-top: 4vw
+  }
 
 
-        <div class="min-h-screen bg-black" >
-            <div class="container mx-auto p-10 max-w-screen-lg bg-black">
+  #backtomain i:hover{
+ color: rgba(238, 24, 63, 0.823);
+ transform: scale(3);
+  }
+</style>
+
+
+
+
+
+      <div id="container-cursor">
+    
+        <div class="cursor cursor--large"> </div>
+        <div class="cursor cursor--small">  </div>
+
+   </div>
+  
+
+
+        <div class="min-h-screen bg-black" id="maincart" >
+            <div class="container   mx-auto p-10 max-w-screen-lg bg-black">
               <div class="bg-white rounded shadow p-8">
                 <!--  ToastBar  -->
                 <div class="w-full bg-red-200 text-yellow-900 px-4 py-2 flex items-center">
@@ -110,15 +147,25 @@
     
     body {
       font-family: 'Manrope', 'sans-serif';
+      background-color: black;
       
+    }
+
+
+    #maincart{
+  
     }
     
           </style>
-        
-    
-    
-    
-    
+
+
+<script>
+
+
+
+</script>
+ 
+
       
         <!-- Add the GSAP library script tag -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
