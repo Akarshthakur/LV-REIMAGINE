@@ -4,7 +4,7 @@ body{
     font-family: Poppins;
     margin: 0;
     font-size: 16px;
-    background-color: #2b5f39;
+    background-color: #000000;
 }
 *{
     box-sizing: border-box;
@@ -18,37 +18,7 @@ body{
     --w-image: 500px;
     --calculate: calc(3 / 2);
 }
-header{
-    display: grid;
-    grid-template-columns: 80px 1fr calc(var(--w-image) * var(--calculate));
-    grid-template-rows: 80px;
-    position: relative;
-    z-index: 10;
-    border-bottom: 1px solid var(--border-color);
-}
-header .logo img{
-    width: 80%;
-}
-header .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-header nav a{
-    color: #000;
-    font-weight: 1000;
-}
-header nav ul{
-    height: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 30px;
-    padding-right: 30px;
-}
-header nav{
-    border-left: 1px solid var(--border-color);
-}
+
 .carousel{
     margin-top: -80px;
     width: 100%;
@@ -66,8 +36,7 @@ header nav{
     content: '';
     top: 0;
     left: calc(100% - calc(var(--w-image) * var(--calculate)));
-    border-left: 1px solid var(--border-color);
-    border-right: 1px solid var(--border-color);
+ 
     z-index: 10;
     pointer-events: none;
 }
@@ -136,7 +105,7 @@ header nav{
     margin: 20px 0;
 }
 .carousel .list .item .main-content .content .addToCard{
-    background-color: #4f8b69;
+    background-color: #000000;
     color: #fff;
     padding: 10px  30px;
     font-family: Poppins;
