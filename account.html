@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Section</title>
-   
+      <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+
+            
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
+
+
+    
+<a id="backtomain" href="./index.html">
+    <i class="ri-arrow-left-line"></i>
+  </a>
+<style>
+
+
+#backtomain {
+  font-size: 3vw;
+  color: white;
+  margin-left: 4vw;
+  margin-top: 4vw;
+  left: 0;
+}
+
+
+#backtomain i:hover{
+
+transform: scale(3);
+}
+</style>
+
 
     <h1>
 Access Your Account
@@ -44,13 +74,19 @@ Access Your Account
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ED1556;
+    background-color: black;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     height: 100vh;
     margin: 0;
+ 
+
+}
+h1 {
+
+    color: white;
 }
 
 .account-container {
@@ -89,10 +125,12 @@ body {
 
 .form-content {
     display: none;
+  
 }
-
 .form-content h2 {
     margin-bottom: 20px;
+
+
 }
 
 .form-content label {
