@@ -189,25 +189,31 @@ tl3.to(dogL, {
 
 // adding gsap to all the remaing page 
 
-/*
 gsap.from(".image-container , #details-page2 , #price-section , #about-page2   ",{
-    y: 190,
-  opacity: 0,
-  delay:0.3,
-  duration: 4,
-  yoyo: true,
-  scrollTrigger: {
-    trigger: "#page2",
-    scroller: "body",
-    // markers:true,
-    start: "top 60%",
-    end: "top 30%",
-    scrub: 2,
+  y: 190,
+opacity: 0,
+delay:0.3,
+duration: 4,
+yoyo: true,
+scrollTrigger: {
+  trigger: "#page2",
+  scroller: "body",
+  // markers:true,
+  start: "top 60%",
+  end: "top 30%",
+  scrub: 2,
 
-  },
-  })
-  
-/*
+},
+})
+
+// page2 
+
+
+
+ 
+
+
+
   gsap.from(" .cardpg3  ",{
     y: 190,
   
@@ -229,18 +235,17 @@ gsap.from(".image-container , #details-page2 , #price-section , #about-page2   "
 
 
 
-*/
+  // page6
 
-
-
-  gsap.from(" .inner-03 , .row-03 ",{
+  
+  gsap.from("#elem-page6-container ,  #page6-headder",{
     y: 190,
   
   opacity: 0,
   delay:0.3,
   duration: 4,
   scrollTrigger: {
-    trigger: ".testinomials-03",
+    trigger: ".page6",
     scroller: "body",
     stagger:0.15,
     // markers:true,
@@ -250,6 +255,61 @@ gsap.from(".image-container , #details-page2 , #price-section , #about-page2   "
   
   },
   })
+
+
+
+  // page4
+
+    
+  gsap.from("#container4",{
+    y: 190,
+  
+  opacity: 0,
+  delay:0.3,
+  duration: 4,
+  scrollTrigger: {
+    trigger: "#page4",
+    scroller: "body",
+    stagger:0.15,
+    // markers:true,
+    start: "top 60%",
+    end: "top 30%",
+    scrub: 2,
+  
+  },
+  })
+
+
+
+
+
+      
+
+
+  //  page5
+
+  gsap.from("#myVideo",{
+    y: 190,
+  
+  opacity: 0,
+  delay:0.3,
+  duration: 4,
+  scrollTrigger: {
+    trigger: "#page5",
+    scroller: "body",
+    stagger:0.15,
+    // markers:true,
+    start: "top 60%",
+    end: "top 30%",
+    scrub: 2,
+  
+  },
+  })
+
+  // page3
+
+  
+
 
 
   // museenter and mouse leave function 

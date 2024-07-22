@@ -31,8 +31,8 @@
                        
                         <a id="features" href="#page10" class="nav-link">Features</a>
                         
-                        <a href="#about-footer" class="nav-link">About</a>
-                        <a href="#page3" class="nav-link">Review</a>
+                        <a id="aboutproduct" href="#about-footer" class="nav-link">About</a>
+                        <a  id="reviewproduct" href="#page3" class="nav-link">Review</a>
                     </div>
                     <div class="nav-right">
                         <input type="text" placeholder="Search" class="search-bar">
@@ -52,28 +52,56 @@
                 </nav>
             </header>
             <div class="mobile-menu">
-                
-                <a href="./product.html" class="nav-link">Product</a>
-                <a href="#lavacare" class="nav-link">Features</a>
-               
-                <a href="#about" class="nav-link">About</a>
+                <a id="featuresa" href="#page10" class="nav-link">Features</a>
+                        
+                <a id="aboutproducta" href="#about-footer" class="nav-link">About</a>
+                <a  id="reviewproducta" href="#page3" class="nav-link">Review</a>
                 <input type="text" placeholder="Search" class="search-bar">
                
             </div>
         </div>
+        
         <script>
+
+        
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('#Hanm');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        hamburger.addEventListener('click', function() {
+            mobileMenu.classList.toggle('open');
+        });
+    });
+
+
             document.getElementById('features').addEventListener('click', function() {
                 window.location.href = 'index.html#page10';
             });
+
+
+            document.getElementById('reviewproduct').addEventListener('click', function() {
+                window.location.href = 'index.html#page3';
+            });
+
+
+            document.getElementById('featuresa').addEventListener('click', function() {
+                window.location.href = 'index.html#page10';
+            });
+
+
+            document.getElementById('reviewproducta').addEventListener('click', function() {
+                window.location.href = 'index.html#page3';
+            });
+
+
+       
         </script>
 
 
 
 
-       <style>
+   <style>
 
-         
-/* page end */
 .navbar-container {
     width: 100%;
     display: flex;
@@ -165,7 +193,7 @@
 
 .hamburger {
     display: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: white;
     cursor: pointer;
 }
@@ -208,9 +236,14 @@
         justify-content: space-between;
 
     }
+
+    .hamburger i{
+font-size: 6vw;
+
+    }
     .hamburger .logo img{
-        height: 7vh;
-        width: 27vw;
+        height: 5vw;
+        width: 22vw;
         display: flex;
         padding-left: 4vw;
     }
@@ -218,14 +251,13 @@
     .navbar {
         width: 90%;
         padding: 1rem;
+        height: 6vh;
     }
 }
 
 
 
-
-
-       </style>
+   </style>
 
 
         <section class="carousel next">

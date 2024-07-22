@@ -148,7 +148,7 @@ padding-bottom: 25vh;
     color: rgb(255, 183, 0);
 }
 .topicpg01{
-    font-size: ;
+    font-size: 1vh;
     color: #BB135C;
     padding-bottom: 2vh;
 }
@@ -212,7 +212,7 @@ padding-bottom: 25vh;
 .carouselpg01 .listpg01 .itempg01 .introducepg01 .despg01{
     font-size:medium;
     color:white;
-    line-height: 2.1vh;
+    line-height: 2.7vh;
     font-weight: 600;
 }
 .carousepg01l .listpg01 .itempg01 .introducepg01 .seeMorepg01{
@@ -852,6 +852,120 @@ padding-bottom: 25vh;
             }
         
         }
+
+
+
+        @media (max-width:828px){
+            #page2{
+                height:fit-content;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                background-color: black;
+        
+               
+            }
+            #container-page2{
+                height:fit-content;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+              
+            }
+        
+            .left-page2{
+                max-height:fit-content;
+                width: 100vw;
+                padding-top: 10px;
+            
+            }
+        
+            .image-container {
+                width: 80vw;
+                /* max-width: 500px; */
+             
+                height: fit-content;
+            
+               
+               
+            }
+            .image-container img {
+                width: 100%;
+         
+                height:30vh;
+                object-fit:contain;
+                justify-content: center;
+                
+            }
+        
+            #right-page2{    
+                height: 70vh !important;
+                width: 100vw;
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+              
+                margin-bottom: 6vw;
+             
+
+                
+            }
+        
+            #details-page2{
+                margin-top: 0.5vh;
+                padding-top: 2px;
+                line-height: 2px;
+                width: 80vw;
+                padding: 2vw 10vw;
+            }
+            #details-page2 h1 {
+                font-size: 2vw;
+                line-height: 5vw;
+            }
+
+              #price-section{
+                width: 90vw;
+              }
+        
+            #price-section h1{
+                font-size: 2.8rem;
+                line-height: 5vw;
+                text-transform: uppercase;
+            }
+        
+            #btn-ripple {
+                height: 50px;
+                width: 200px;
+                font-size: 5vw;
+             
+            
+               
+            }
+                 #about-page2{
+              display: flex;
+                  align-items: center;
+             justify-content: center;
+               flex-direction: column;
+               gap: 1vh;
+               padding-bottom: 5vh;
+               margin-top: 3vh;
+           
+
+                 }
+
+               
+
+            #btn-ripplea {
+                height: 50px;
+                width: 200px;
+                margin-left: 2vw;
+                font-size: 5vw;
+            }
+        
+        }
+        
         
        
 
@@ -2333,9 +2447,14 @@ background-color: transparent;
         justify-content: space-between;
 
     }
+
+    .hamburger i{
+font-size: 6vw;
+
+    }
     .hamburger .logo img{
-        height: 7vh;
-        width: 27vw;
+        height: 5vw;
+        width: 22vw;
         display: flex;
         padding-left: 4vw;
     }
@@ -2343,6 +2462,7 @@ background-color: transparent;
     .navbar {
         width: 90%;
         padding: 1rem;
+        height: 6vh;
     }
 }
 
